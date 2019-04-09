@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.deposit.UserDepositModuleActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/deposit_menu_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_toolbar"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/pay_deposit_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_pay_money"
+            app:menu_name="交押金" />
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/pay_penalty_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_pay_penalty"
+            app:menu_name="交罚金" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deposit_menu_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deposit_menu_one"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/refund_deposit_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_return_deposit"
+            app:menu_name="退押金" />
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/bill_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_bill"
+            app:menu_name="账单" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deposit_menu_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deposit_menu_two"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/pay_deposit_explain_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_explain"
+            app:menu_name="押金说明" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.tzpt.cloudlibrary.widget.LoadingProgressView
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar" />
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/outflow_date_tv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="日期"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/outflow_lib_code_tv"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/outflow_date_tv"
+            android:layout_toRightOf="@+id/outflow_date_tv"
+            android:singleLine="true"
+            android:text="流向馆"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/outflow_lib_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@+id/outflow_lib_code_tv"
+            android:layout_toLeftOf="@+id/outflow_operator_tv"
+            android:layout_toRightOf="@+id/outflow_lib_code_tv"
+            android:layout_toStartOf="@+id/outflow_operator_tv"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="馆名"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/outflow_operator_tv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="操作员"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_outflow_item"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/outflow_data_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toLeftOf="@+id/outflow_status_tv"
+            android:layout_toStartOf="@+id/outflow_status_tv"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="45225/1232455.00"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/outflow_status_tv"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/outflow_change_tv"
+            android:layout_toStartOf="@+id/outflow_change_tv"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="被否决"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/outflow_change_tv"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/outflow_delete_tv"
+            android:layout_toStartOf="@+id/outflow_delete_tv"
+            android:background="@drawable/selector_flow_item"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="修改"
+            android:textColor="#3F51B5"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/outflow_delete_tv"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_flow_item"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="删单"
+            android:textColor="#ff0000"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

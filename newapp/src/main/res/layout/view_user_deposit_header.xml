@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/color_ffffff"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/user_deposit_can_use_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/color_906c48"
+        android:textSize="17sp"
+        tools:text="可用押金50.00" />
+
+    <TextView
+        android:id="@+id/user_deposit_take_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:layout_marginLeft="@dimen/margin_8dp"
+        android:layout_marginRight="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_toEndOf="@+id/user_deposit_can_use_tv"
+        android:layout_toRightOf="@+id/user_deposit_can_use_tv"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/color_906c48"
+        android:textSize="17sp"
+        tools:text="占用押金100.00" />
+
+</RelativeLayout>

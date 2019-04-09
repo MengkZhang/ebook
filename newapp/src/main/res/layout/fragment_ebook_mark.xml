@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tzpt.cloudlibrary.widget.DrawableCenterTextView
+        android:id="@+id/book_mark_empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="9dp"
+        android:drawableTop="@mipmap/ic_ebook_read_mark_empty"
+        android:gravity="center_horizontal"
+        android:text="暂无书签"
+        android:textColor="@color/color_cccccc"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/mark_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:divider="@drawable/bg_divider_toc_list"
+        android:scrollbars="none"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/expanded_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        tools:text="内容简介" />
+
+    <TextView
+        android:id="@+id/expanded_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="7sp"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        tools:text="为什么有人和谁都聊得来，有人一开口就冷场？为什么有人走到哪里都受欢迎，有人处处遭人白眼？为什么有人得意时众星拱月、失意时墙倒众人推，有人却能始终得到信赖和……助？
+      做人是艺术，交人是技术！风起云涌的现代社会，资源是有限的，机会也是有限的，唯有人脉才能创造*大价值！本书以人际关系为主轴，结合社交礼仪、沟通术等方面的技巧，从个人修养、上下级关系、商务往来、消费习惯等方面，图文并茂，详细解析了如何把握机会，引导话题；如何有效地“推销”自己，建立关系网；如何将人脉变成钱脉，使事业更上一层楼……
+      本书建议阅读人群：大学生、上班族、管理者、谈判家、咨询师等。" />
+
+    <ImageView
+        android:id="@+id/expanded_arrow_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:padding="10dp"
+        android:src="@mipmap/ic_expanded_down_arrow" />
+</LinearLayout>

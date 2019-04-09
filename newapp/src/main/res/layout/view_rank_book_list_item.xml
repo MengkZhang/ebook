@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="73dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_book_image_cv"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="5.5dp"
+        android:background="@mipmap/bg_book_shadow">
+
+        <ImageView
+            android:id="@+id/item_book_image"
+            android:layout_width="68dp"
+            android:layout_height="93dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/item_book_rank_list_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_book_image"
+            android:layout_alignStart="@+id/item_book_image"
+            android:layout_alignTop="@+id/item_book_image"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginStart="2.5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/item_book_rank_list_three_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/ic_ranking_three_head"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/item_book_rank_list_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_book_rank_list_three_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-2dp"
+                android:background="@mipmap/ic_ranking_first"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="1"
+                android:textColor="@color/color_ffffff"
+                android:textSize="11sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_book_title"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_book_image_cv"
+        android:layout_marginBottom="8.5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="9.5dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:minLines="2"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/color_666666"
+        android:textSize="13sp"
+        tools:text="书名书名书名书名书名书名书名书名书名" />
+
+</RelativeLayout>

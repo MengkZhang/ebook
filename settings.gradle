@@ -1,0 +1,1 @@
+include ':ebookreader', ':newapp',':manager',':library',':camera',':zbar',':advertising'

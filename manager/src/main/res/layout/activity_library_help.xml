@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloundlibrary.manager.ui.activity.LibraryHelpActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <TextView
+        android:id="@+id/library_help_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F4F4F4"
+        android:gravity="center_vertical"
+        android:paddingEnd="0dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="0dp"
+        android:paddingStart="16dp"
+        android:text="问题类型"
+        android:textColor="@color/color_333333"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.tzpt.cloundlibrary.manager.widget.recyclerview.EasyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_empty="@layout/common_footer_empty_view"
+        app:layout_error="@layout/common_net_error_view"
+        app:layout_progress="@layout/common_progress_view" />
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/return_book_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <com.tzpt.cloundlibrary.manager.widget.TitleBarView
+        android:id="@+id/return_book_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/user_info"
+        layout="@layout/view_login_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/return_book_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/user_info"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/edit_code_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/edit_code_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_round_d3cfc9"
+                android:gravity="center"
+                android:hint="输入条码号"
+                android:imeOptions="actionDone"
+                android:inputType="textUri|text"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColorHint="#888888"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/scan_code_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@mipmap/ic_scaner" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/return_book_list_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/return_book_btn_ll"
+            android:layout_below="@+id/edit_code_rl"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/return_book_list_title"
+                layout="@layout/view_return_book_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/return_book_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/return_book_total"
+                android:layout_below="@+id/return_book_list_title"/>
+
+            <include
+                android:id="@+id/return_book_total"
+                layout="@layout/view_return_book_total"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/return_book_btn_ll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/lost_book_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/item_selector"
+                android:text="赔书处理"
+                android:textColor="#7E6043"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/penalty_or_exit_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/item_selector"
+                android:text="退出"
+                android:textColor="#7E6043"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

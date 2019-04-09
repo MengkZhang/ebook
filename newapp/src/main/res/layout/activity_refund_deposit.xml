@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.deposit.RefundDepositActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/deposit_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_toolbar"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/online_deposit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/color_906c48"
+            android:textSize="17sp"
+            tools:text="线上可退50.00" />
+
+        <TextView
+            android:id="@+id/offline_deposit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="30dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/color_906c48"
+            android:textSize="17sp"
+            android:visibility="gone"
+            tools:text="线下可退100.00" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/refund_deposit_money_et"
+        style="@style/book_detail_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/deposit_info_ll"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/bg_round_dddddd"
+        android:hint="退押金金额"
+        android:inputType="numberDecimal"
+        android:maxLength="30"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" />
+
+
+    <Button
+        android:id="@+id/refund_deposit_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/refund_deposit_money_et"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/bg_round_c2c2c2"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/offline_deposit_tip_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refund_deposit_btn"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:text="注：线下押金需到图书馆内办理"
+        android:textColor="#999999"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <com.tzpt.cloudlibrary.widget.LoadingProgressView
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar" />
+
+</RelativeLayout>

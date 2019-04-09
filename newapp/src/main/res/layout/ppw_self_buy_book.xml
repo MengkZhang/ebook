@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="@string/confirm_self_buy_book"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cacacb" />
+
+    <EditText
+        android:id="@+id/self_buy_book_money_et"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_round_d0d0d0"
+        android:enabled="false"
+        android:hint="金额"
+        android:paddingLeft="7.5dp"
+        android:paddingRight="7.5dp"
+        android:textColor="#999999"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/self_buy_book_psw_et"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_round_d0d0d0"
+        android:hint="@string/please_input_reader_psw"
+        android:paddingLeft="7.5dp"
+        android:paddingRight="7.5dp"
+        android:textColor="#999999"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/self_buy_book_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/phone_manage_button_bg"
+        android:text="@string/confirm_use_deposit"
+        android:textColor="@color/color_ffffff"
+        android:textSize="15sp" />
+
+</LinearLayout>

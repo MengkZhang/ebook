@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.tzpt.cloudlibrary.widget.bannerview.BannerView
+                android:id="@+id/lib_banner_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_main_ebebeb"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <com.tzpt.cloudlibrary.widget.menupager.ModelMenuLayout
+                    android:id="@+id/lib_model_menu_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.tzpt.cloudlibrary.ui.library.LibraryIntroduceView
+                    android:id="@+id/lib_introduce_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <ViewStub
+                    android:id="@+id/lib_paper_book_vs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inflatedId="@+id/lib_book_list_iv"
+                    android:layout="@layout/view_common_home_item" />
+
+                <ViewStub
+                    android:id="@+id/lib_ebook_vs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inflatedId="@+id/lib_ebook_list_iv"
+                    android:layout="@layout/view_common_home_item" />
+
+                <ViewStub
+                    android:id="@+id/lib_video_vs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inflatedId="@+id/lib_video_list_iv"
+                    android:layout="@layout/view_common_home_item" />
+
+                <ViewStub
+                    android:id="@+id/lib_news_vs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inflatedId="@+id/lib_news_list_iv"
+                    android:layout="@layout/view_common_home_item" />
+
+                <ViewStub
+                    android:id="@+id/lib_activity_vs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inflatedId="@+id/lib_activity_list_iv"
+                    android:layout="@layout/view_common_home_item" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/lib_attention_tv"
+        android:background="#dcdcdc" />
+
+
+    <com.tzpt.cloudlibrary.widget.DrawableCenterTextView
+        android:id="@+id/lib_attention_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ffffff"
+        android:button="@null"
+        android:drawableLeft="@mipmap/ic_library_attention"
+        android:drawablePadding="10dp"
+        android:drawableStart="@mipmap/ic_library_attention"
+        android:gravity="center_vertical"
+        android:text="@string/set_attention"
+        android:textColor="@color/color_999999"
+        android:textSize="16sp" />
+
+    <com.tzpt.cloudlibrary.widget.multistatelayout.MultiStateLayout
+        android:id="@+id/multi_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_empty_view="@layout/common_empty_big_view"
+        app:layout_error_view="@layout/common_net_error_big_view"
+        app:layout_progress_view="@layout/common_progress_view" />
+</RelativeLayout>

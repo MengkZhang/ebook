@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/borrow_book_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_vedio_shelf"
+            app:menu_name="借阅架" />
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/buy_book_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_shelf_buy_book"
+            app:menu_name="购书架" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/ebook_shelf_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_ebook_shelf"
+            app:menu_name="电子书架" />
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/video_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_vedio_shelf"
+            app:menu_name="视频架" />
+    </LinearLayout>
+
+
+</LinearLayout>

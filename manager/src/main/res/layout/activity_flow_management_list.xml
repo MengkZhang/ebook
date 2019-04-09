@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flow_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloundlibrary.manager.ui.activity.FlowManagementListActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <include layout="@layout/view_outflow_menu_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+    <com.tzpt.cloundlibrary.manager.widget.recyclerview.EasyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_empty="@layout/common_footer_empty_view"
+        app:layout_error="@layout/common_net_error_view"
+        app:layout_progress="@layout/common_progress_view" />
+
+    <include layout="@layout/view_flow_bottom_layout" />
+
+</LinearLayout>

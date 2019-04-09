@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_ffffff"
+    tools:context="com.tzpt.cloudlibrary.ui.map.MapNavigationActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@color/color_ffffff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="#efefef" />
+
+
+        <TextView
+            android:id="@+id/item_total_book_tv"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"
+            android:singleLine="true"
+            android:text="藏书0册" />
+
+        <TextView
+            android:id="@+id/item_distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/item_start_navigation_btn"
+            android:layout_toStartOf="@+id/item_start_navigation_btn"
+            android:drawableLeft="@mipmap/position"
+            android:drawablePadding="4dp"
+            android:drawableStart="@mipmap/position"
+            android:gravity="center_vertical|end"
+            android:textColor="#306cbb"
+            android:textSize="13sp"
+            tools:text="0m" />
+
+
+        <com.tzpt.cloudlibrary.widget.AlignTextView
+            android:id="@+id/item_address_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_total_book_tv"
+            android:layout_alignStart="@+id/item_total_book_tv"
+            android:layout_below="@+id/item_total_book_tv"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/item_start_navigation_btn"
+            android:layout_toStartOf="@+id/item_start_navigation_btn"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.1"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            cb:align="left" />
+
+        <Button
+            android:id="@+id/item_start_navigation_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_navigation_btn"
+            android:text="开始\n导航"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</LinearLayout>

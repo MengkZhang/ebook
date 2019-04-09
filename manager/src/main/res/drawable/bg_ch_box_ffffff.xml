@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下时的背景图片 -->
+    <item android:drawable="@drawable/bg_round_stroke_8a633d" android:state_selected="true" android:state_enabled="true" />
+    <!-- 按下时的背景图片 -->
+    <item android:drawable="@drawable/bg_round_stroke_8a633d" android:state_checked="true" android:state_enabled="true" />
+    <!-- 默认时的背景图片 -->
+    <item android:drawable="@drawable/bg_round_stroke_ffffff" />
+</selector>

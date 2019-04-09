@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4f4f4"
+    android:orientation="vertical">
+
+    <com.tzpt.cloudlibrary.widget.searchview.SearchBarLayout
+        android:id="@+id/search_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:searchHintName="搜图书馆" />
+
+    <com.tzpt.cloudlibrary.widget.recyclerview.EasyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="326.5dp"
+        app:layout_empty="@layout/common_rv_empty_view"
+        app:layout_error="@layout/common_net_error_view"
+        app:layout_progress="@layout/common_progress_view"
+        app:scrollbarStyle="insideOverlay" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <LinearLayout
+        android:id="@+id/book_type_ll"
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/classify_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:text="全部分类"
+            android:textColor="@color/color_8a623d"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/classify_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_right_down_arrow" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/choose_driver"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_f4f4f4" />
+
+</RelativeLayout>

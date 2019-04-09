@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nick_name_root_view_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.UserNickNameActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ebebeb">
+
+        <LinearLayout
+            android:id="@+id/user_nick_name_ll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/user_nick_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:hint="@string/nick_name"
+                android:inputType="text"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/user_nick_name_delete_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginLeft="-35dp"
+                android:layout_marginStart="-35dp"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:src="@mipmap/ic_delete_text"
+                android:textColor="@color/color_666666"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_nick_name_ll"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14dp"
+            android:lineSpacingExtra="30sp"
+            android:text="@string/user_nick_name_tips"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <com.tzpt.cloudlibrary.widget.LoadingProgressView
+            android:id="@+id/loading_progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

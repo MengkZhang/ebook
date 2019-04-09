@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <com.tzpt.cloundlibrary.manager.widget.camera.ScanWrapper
+        android:id="@+id/entrance_guard_scan_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <com.tzpt.cloundlibrary.manager.widget.TitleBarView
+        android:id="@+id/entrance_guard_scan_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/user_info"
+        layout="@layout/view_login_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entrance_guard_scan_title" />
+
+    <ImageView
+        android:id="@+id/flag_iv"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_above="@+id/scan_book_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/scan_book_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/entrance_guard_scan_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ff0000"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/entrance_guard_scan_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/light_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000"
+            android:drawableTop="@mipmap/ic_light"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="手电筒"
+            android:textColor="#ccc"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/return_list_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000"
+            android:drawableTop="@mipmap/ic_return_edit"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="手动录入"
+            android:textColor="#ccc"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

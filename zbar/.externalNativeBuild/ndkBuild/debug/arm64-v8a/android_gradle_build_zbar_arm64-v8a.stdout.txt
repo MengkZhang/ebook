@@ -1,0 +1,1 @@
+make: `D:/android_work/work_space/zbar/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/libzbar.so' is up to date.

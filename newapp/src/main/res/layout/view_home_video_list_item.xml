@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_translate_common">
+
+    <RelativeLayout
+        android:id="@+id/video_item_image_cv"
+        android:layout_width="98dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="5.5dp"
+        android:layout_marginLeft="13.5dp"
+        android:layout_marginStart="13.5dp"
+        android:layout_marginTop="5.5dp"
+        android:background="@mipmap/bg_round_shadow">
+
+        <ImageView
+            android:id="@+id/video_item_image_iv"
+            android:layout_width="93dp"
+            android:layout_height="68dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/video_item_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/video_item_image_cv"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/video_item_image_cv"
+        android:layout_toRightOf="@+id/video_item_image_cv"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:minLines="2"
+        android:padding="0dp"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        tools:text="中考英语核心语法精讲夯实" />
+
+    <TextView
+        android:id="@+id/video_item_play_times_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/video_item_image_cv"
+        android:layout_alignEnd="@+id/video_item_title_tv"
+        android:layout_alignLeft="@+id/video_item_title_tv"
+        android:layout_alignRight="@+id/video_item_title_tv"
+        android:layout_alignStart="@+id/video_item_title_tv"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/video_item_image_cv"
+        android:layout_toRightOf="@+id/video_item_image_cv"
+        android:drawableLeft="@mipmap/ic_video_item_play"
+        android:drawablePadding="7dp"
+        android:drawableStart="@mipmap/ic_video_item_play"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        tools:text="2000次观看" />
+
+</RelativeLayout>

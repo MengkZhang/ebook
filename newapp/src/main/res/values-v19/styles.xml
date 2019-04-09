@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_ffffff</item>
+        <item name="colorPrimaryDark">@color/color_ffffff</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:windowBackground">@color/color_ffffff</item>
+        <item name="colorAccent">@color/color_989898</item>
+        <item name="colorControlNormal">#EFEFEF</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="165dp">
+
+    <com.tzpt.cloudlibrary.widget.bannerview.LoopViewPager
+        android:id="@+id/banner_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/banner_vp"
+        android:background="@mipmap/ic_banner_bg">
+
+        <TextView
+            android:id="@+id/banner_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginStart="16dp"
+            android:layout_toLeftOf="@+id/banner_indicator"
+            android:layout_toStartOf="@+id/banner_indicator"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/color_ffffff"
+            android:textSize="13sp"
+            tools:text="坚定文化自信，创造中华文化新辉煌坚定文化自信，创造中华文化新辉煌" />
+
+        <com.tzpt.cloudlibrary.widget.bannerview.CircleIndicator
+            android:id="@+id/banner_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/banner_title_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:orientation="horizontal"
+            app:ci_drawable="@mipmap/ic_banner_indicator_selected"
+            app:ci_drawable_unselected="@mipmap/ic_banner_indicator_def"
+            app:ci_height="4dp"
+            app:ci_margin="3dp"
+            app:ci_width="4dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/banner_default_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_information_no_data"
+        android:visibility="gone" />
+
+</RelativeLayout>

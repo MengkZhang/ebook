@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.UserInfoActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/user_info_one_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_toolbar"
+        android:divider="@drawable/bg_divider_margin16"
+        android:dividerPadding="0.5dp"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserInfoItemView
+            android:id="@+id/user_info_item_head_civ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:item_style="1"
+            app:model_name="头像" />
+
+        <com.tzpt.cloudlibrary.widget.CustomUserInfoItemView
+            android:id="@+id/user_info_item_nickname_civ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:item_style="0"
+            app:max_length="10"
+            app:model_name="昵称" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/user_info_divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/user_info_one_ll"
+        android:background="@color/color_ebebeb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/user_info_divider"
+        android:background="@color/color_ebebeb"
+        android:divider="@drawable/bg_divider_margin16"
+        android:dividerPadding="0.5dp"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserInfoItemView
+            android:id="@+id/user_info_item_card_name_civ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:item_style="2"
+            app:max_length="20"
+            app:model_name="姓名" />
+
+        <com.tzpt.cloudlibrary.widget.CustomUserInfoItemView
+            android:id="@+id/user_info_item_id_card_civ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:max_length="18"
+            app:item_style="2"
+            app:model_name="身份证" />
+
+
+        <com.tzpt.cloudlibrary.widget.CustomUserInfoItemView
+            android:id="@+id/user_info_item_phone_civ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:max_length="11"
+            app:item_style="0"
+            app:model_name="手机号" />
+    </LinearLayout>
+
+    <com.tzpt.cloudlibrary.widget.LoadingProgressView
+        android:id="@+id/loading_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar" />
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/discuss_comment_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/discuss_comment_layout_v"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#33000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:minHeight="45dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/discuss_comment_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_border_discuss"
+                android:hint="写评论"
+                android:maxLength="200"
+                android:maxLines="8"
+                android:minHeight="32dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/color_333333"
+                android:textColorHint="#999999"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/no_login_cover_view"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/color_translate" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/discuss_comment_content_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp">
+
+            <ImageButton
+                android:id="@+id/discuss_discuss_list_btn"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+                android:contentDescription="@null"
+                android:src="@mipmap/ic_discuss" />
+
+            <TextView
+                android:id="@+id/discuss_discuss_list_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginStart="-20dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/discuss_discuss_list_btn"
+                android:layout_toRightOf="@+id/discuss_discuss_list_btn"
+                android:background="@drawable/bg_oval_ff0000"
+                android:gravity="center"
+                android:minWidth="12dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="8sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/discuss_send_tv"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/color_aa886c"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

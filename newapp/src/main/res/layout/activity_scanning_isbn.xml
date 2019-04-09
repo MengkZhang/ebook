@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tzpt.cloudlibrary.widget.camera.ScanWrapper
+        android:id="@+id/recommend_new_book_camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_000000" />
+
+    <include layout="@layout/view_common_title_bar" />
+
+
+    <TextView
+        android:id="@+id/borrow_book_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="100dp"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        tools:text="暂无此书资料!" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_light"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000"
+            android:drawableTop="@mipmap/ic_light"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="手电筒"
+            android:textColor="#ccc"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000"
+            android:drawableTop="@mipmap/ic_back"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="返回"
+            android:textColor="#ccc"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</FrameLayout>

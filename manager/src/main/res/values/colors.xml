@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#694a2c</color>
+    <color name="colorPrimaryDark">#694a2c</color>
+    <color name="colorAccent">#989898</color>
+
+    <color name="color_694a2c">#694a2c</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_E3E3E3">#e3e3e3</color>
+    <color name="common_divider_narrow">#efefef</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_999999">#999999</color>
+    <drawable name="selector_white">#ffffff</drawable>
+    <drawable name="selector_gray">#dddddd</drawable>
+    <drawable name="color_flow_press">#dddddd</drawable>
+    <drawable name="color_flow_default">#00000000</drawable>
+    <drawable name="home_item_684a2b">#684a2b</drawable>
+    <drawable name="home_item_8a633d">#8a633d</drawable>
+
+</resources>

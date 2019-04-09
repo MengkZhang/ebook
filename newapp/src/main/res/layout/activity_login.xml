@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.LoginActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar"
+        android:background="@color/color_f4f4f4">
+
+
+        <LinearLayout
+            android:id="@+id/login_account_ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/book_detail_text_title"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="用户名" />
+
+            <EditText
+                android:id="@+id/login_account"
+                style="@style/book_detail_text_title"
+                android:layout_width="0dip"
+                android:layout_height="60dp"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:digits="@string/digits_txt"
+                android:gravity="center_vertical"
+                android:hint="身份证/手机号"
+                android:inputType="textUri|text"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:textColorHint="#989898"
+                android:textCursorDrawable="@null" />
+
+            <ImageView
+                android:id="@+id/login_delete_box1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="-35dp"
+                android:layout_marginStart="-35dp"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_delete_text"
+                android:textColor="@color/color_666666"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_line_one"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/login_account_ll"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/color_f4f4f4" />
+
+        <LinearLayout
+            android:id="@+id/login_pwd_ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/item_line_one"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/book_detail_text_title"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_password" />
+
+            <EditText
+                android:id="@+id/login_password"
+                style="@style/book_detail_text_title"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColorHint="#989898"
+                android:textCursorDrawable="@null" />
+
+            <ImageView
+                android:id="@+id/login_delete_box2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="-35dp"
+                android:layout_marginStart="-35dp"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@mipmap/ic_delete_text"
+                android:textColor="@color/color_666666"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/login_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="忘记密码"
+                android:textColor="#8d633b"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_line_two"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/login_pwd_ll"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/color_f4f4f4" />
+
+        <Button
+            android:id="@+id/login_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/item_line_two"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/btn_login"
+            android:gravity="center"
+            android:text="@string/action_sign_in"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/login_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:padding="6dp"
+            android:text="未注册读者登记"
+            android:textColor="#966234"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <com.tzpt.cloudlibrary.widget.LoadingProgressView
+            android:id="@+id/login_progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

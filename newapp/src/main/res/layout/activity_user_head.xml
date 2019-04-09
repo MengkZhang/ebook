@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.UserHeadActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tzpt.cloudlibrary.widget.recyclerview.EasyRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_empty="@layout/common_empty_big_view"
+            app:layout_error="@layout/common_net_error_big_view"
+            app:layout_progress="@layout/common_progress_view"
+            app:recyclerPaddingLeft="16dp"
+            app:recyclerPaddingRight="16dp"
+            app:recyclerPaddingTop="17dp"
+            app:scrollbarStyle="insideOverlay" />
+
+        <com.tzpt.cloudlibrary.widget.LoadingProgressView
+            android:id="@+id/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+</LinearLayout>

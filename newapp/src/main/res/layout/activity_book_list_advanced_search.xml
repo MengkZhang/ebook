@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.paperbook.BookListAdvancedSearchActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f4f4f4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:divider="@drawable/divider_f4f4f4_left_padding"
+                android:dividerPadding="16dp"
+                android:orientation="vertical"
+                android:showDividers="middle|end">
+
+                <LinearLayout
+                    android:id="@+id/search_book_grade_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="分类"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/search_book_grade_tv"
+                        style="@style/book_detail_text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableEnd="@mipmap/ic_right_arrow"
+                        android:drawableRight="@mipmap/ic_right_arrow"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        tools:text="分类" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="ISBN"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/search_book_isbn_et"
+                        style="@style/book_detail_text_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        tools:text="ISBN"
+                        android:maxLength="20"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:id="@+id/scanner_ibtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:contentDescription="@string/app_name"
+                        android:padding="10dp"
+                        android:src="@mipmap/ic_scaner" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_book_bar_code_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="条码号"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/search_book_bar_code_et"
+                        style="@style/book_detail_text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        tools:text="条码号"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="书名"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/search_book_name_et"
+                        style="@style/book_detail_text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        tools:text="书名"
+                        android:maxLength="20"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="著译者"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/search_book_author_et"
+                        style="@style/book_detail_text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        tools:text="著译者"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="出版社"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/search_book_company_et"
+                        style="@style/book_detail_text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        tools:text="出版社"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/color_ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="出版年"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/search_book_year_et"
+                        style="@style/book_detail_text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        tools:text="出版年"
+                        android:maxLength="4"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/advance_search_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_login"
+                android:text="确定"
+                android:textColor="@color/color_ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

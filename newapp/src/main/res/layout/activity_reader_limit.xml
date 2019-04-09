@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reader_limit_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ebook.EBookReadLimitActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ffffff"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="试读已结束"
+                android:textColor="#8a633c"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/ic_limit_read_ebook" />
+
+            <Button
+                android:id="@+id/reader_limit_login_btn"
+                android:layout_width="210dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/btn_login"
+                android:gravity="center"
+                android:text="登录后继续阅读"
+                android:textColor="@color/color_ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/reader_limit_del_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="16dp"
+            android:src="@mipmap/ic_ebook_del_icon" />
+    </RelativeLayout>
+</RelativeLayout>

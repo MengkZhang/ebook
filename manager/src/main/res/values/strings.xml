@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">云图管理</string>
+
+    <!--common-->
+    <string name="network_fault">网络请求失败！</string>
+    <string name="error_code_500">网络请求失败！</string>
+    <string name="kicked_offline">账号已在其它设备登录，请确认是否本人操作！</string>
+    <string name="operate_timeout">操作超时，请重新登录！</string>
+    <string name="loading">加载中...</string>
+    <!-- login -->
+    <string name="mine">我的</string>
+    <string name="message">消息</string>
+    <string name="library_number">馆号</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="not_library_reader">非本馆读者！</string>
+    <string name="englist_txt">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</string>
+    <string name="englist_letters_numbers">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890-</string>
+    <string name="englist_scanner_input_numbers">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890</string>
+    <string name="englist_idcard">0123456789Xx</string>
+    <string name="englist_phone">0123456789-</string>
+    <string name="refresh_idcard_for_register">请先完成身份证刷证注册！</string>
+    <string name="take_idcard_borrow_book">无押金馆需携带身份证借书！</string>
+    <string name="not_idcard_need_check">该读者为非身份证读者，请先验证信息！</string>
+    <string name="not_idcard_need_register_again">该读者为非身份证注册读者，需重新注册！</string>
+    <string name="binding_id_card_number">该手机号已被\n身份证%s绑定"</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="reset_pwd_hall_code">馆号：%s</string>
+    <string name="reset_pwd_admin_name">用户名：%s</string>
+    <!-- 注册 -->
+    <string name="verify_code_error">验证码错误！</string>
+    <string name="register_error">注册失败！</string>
+    <string name="tel_is_same">新手机号与旧手机号一致！</string>
+
+    <string name="deposit_handle_penalty">欠罚金%s元未扣，从押金扣除！</string>
+    <string name="title_activity_flow_managemeng_list">FlowManagemengListActivity</string>
+    <string name="total_sum">数量 %s</string>
+    <string name="total_price">金额 %s</string>
+    <string name="total_sum_one">合计数量 %s</string>
+    <string name="total_price_one">合计码洋 %s</string>
+    <string name="total_penalty">欠罚金 %s</string>
+    <string name="text_collect_date">日期</string>
+    <string name="text_collect_order_number">单号</string>
+    <string name="text_collect_project">项目</string>
+    <string name="text_collect_operator">操作员</string>
+    <string name="text_collect_price">金额</string>
+    <string name="text_reader_name">姓名</string>
+    <string name="text_reader_idcard">身份证号</string>
+    <string name="text_reader_borrow_number">借阅次数</string>
+    <string name="text_reader_date">建档日期</string>
+    <!-- 借书-->
+    <string name="premium">溢0.00</string>
+    <string name="text_status">状态</string>
+    <string name="pricing">定价</string>
+    <string name="book_name">书名</string>
+    <string name="bar_code">条码号</string>
+    <string name="limit_value">超限值！</string>
+    <string name="free_penalty_un_check">免单申请未审核！</string>
+    <!-- 流出管理-->
+    <string name="flow_management">流出管理</string>
+    <string name="inflow_management">流入管理</string>
+    <string name="out_list">流出列表</string>
+    <string name="query_condition_is_empty">输入不能为空！</string>
+    <string name="single_error">单号错误！</string>
+    <string name="bar_code_error">条码号不存在！</string>
+    <string name="code_error">错误值！</string>
+    <string name="success">成功！</string>
+    <string name="failure">失败！</string>
+    <string name="sure_to_withdraw_this_list">确定撤回本单？</string>
+    <string name="out_of_entry">流出录入</string>
+    <string name="counting_the_delete_single">清点删单</string>
+    <string name="direct_delete">直接删单</string>
+    <string name="to_withdraw">撤回</string>
+    <string name="send">发送</string>
+    <string name="delete_a_single">删单</string>
+    <string name="confirm">确定</string>
+
+    <!-- 开发设置 -->
+    <string name="password_cannot_be_empty">密码不能为空！</string>
+    <string name="phone_number_cannot_empty">电话不能为空！</string>
+    <string name="phone_number_error">电话号码错误！</string>
+    <string name="phone_num_error">手机号码错误！</string>
+    <string name="Start_time_must_smaller_than_the_end_time">开始时间必须小于结束时间！</string>
+    <string name="set_the_success">设置成功！</string>
+    <string name="setup_failed">设置失败！</string>
+    <string name="positioning_failure">定位失败！</string>
+    <string name="positioning_prompt">您还未开启定位\n开启定位，查找结果更准确！</string>
+    <string name="duplicate_entry">重复录入！</string>
+    <string name="today_open_time_error">今日开放时间设置错误！</string>
+    <string name="long_open_time_error">定期开放时间设置错误！</string>
+
+    <string name="set_refund_account_success">设置成功！</string>
+    <string name="set_refund_account_failed">设置失败！</string>
+    <string name="change_refund_account_success">更换成功！</string>
+    <string name="change_refund_account_failed">更换失败！</string>
+    <string name="change_refund_account">更换退款账户</string>
+    <string name="set_refund_account">设置退款账户</string>
+
+    <!-- 赔书管理-->
+    <string name="compensate_book_success">赔书成功！</string>
+    <string name="compensate_book_failed">赔书失败！</string>
+    <string name="money_cannot_be_empty">金额不能为空！</string>
+    <string name="no_compensate_book_info">暂无赔书信息！</string>
+    <string name="book_no_back">未还%d</string>
+    <string name="usable_deposit">可用押金%s</string>
+    <string name="operator_pwd">操作员密码</string>
+    <string name="sure_collect_money">确认交赔款</string>
+    <string name="sure_receive_deposit">确认收押金</string>
+    <string name="sure_deduct_deposit">确认扣押金</string>
+    <string name="reader_pwd">读者密码</string>
+    <string name="compensate_management">赔书管理</string>
+    <string name="compensate_book_total">合计</string>
+    <!-- 提现-->
+    <string name="money_not_empty">金额不能为空！</string>
+    <string name="enter_correct_amount">请输入正确的金额！</string>
+    <string name="maximum_withdrawal">您最多能提现%s元！</string>
+    <string name="successful_withdrawal_application">提现申请成功!预计0~7个工作日到账！</string>
+    <string name="failure_withdrawal_application">提现申请失败！</string>
+    <string name="limit_month">本月提现次数超限次！</string>
+    <string name="limit_year">本年提现次数超限次！</string>
+    <string name="withdraw_deposit_more_than_one">提现金额不小于1元！</string>
+    <string name="refundable_deposit">可退金额%s</string>
+    <string name="withdraw_deposit_limit">您最多能提现%s元！</string>
+    <string name="balance_not_enough">余额不足！</string>
+    <string name="no_refund_account">请设置退款账户！</string>
+
+    <!-- 充值-->
+    <string name="pay_success">支付成功！</string>
+    <string name="pay_failed">支付失败！</string>
+    <string name="pay_dealing">处理中！</string>
+
+    <string name="error_code_3001">修改失败！</string>
+    <string name="change_success">修改成功！</string>
+    <string name="error_code_3002">新增失败！</string>
+    <string name="library_is_not_exists">馆号错误！</string>
+    <string name="account_is_not_exists">账号不存在！</string>
+    <string name="no_permission">暂无此权限！</string>
+    <string name="hall_code_not_empty">馆号不能为空！</string>
+    <string name="psw_error">密码错误！</string>
+    <string name="login_fails">登录失败！</string>
+    <string name="validation_fails">验证失败！</string>
+    <string name="account_is_lost">账号已失效！</string>
+    <string name="idcard_error">身份证号错误！</string>
+    <!-- 还书管理-->
+    <string name="reader_does_not_exist">账号不存在！</string>
+    <string name="money_not_enough">馆押金不足！</string>
+    <string name="return_deposit_fail">退押金失败！</string>
+    <string name="return_deposit_fail_have_penalty">有罚金未处理！</string>
+    <string name="money_error">金额错误！</string>
+    <string name="money_not_less_than">收款金额不能小于%s元！</string>
+    <string name="withdraw_deposit_wx">微信退款预计4月1日开通，给您带来不便，敬请谅解！</string>
+    <string name="return_book_failed">还书失败！</string>
+    <!-- 流出管理-->
+    <string name="library_has_stopped">本馆已停用！</string>
+
+    <string name="circulation_without_authorization">流通无授权！</string>
+    <string name="not_pass_also_pavilion_book">非通还馆书！</string>
+    <string name="library_limit_book_circulation">本书限制流通！</string>
+    <string name="library_limit_book">本书限制通还！</string>
+    <string name="book_not_borrow">本书不外借！</string>
+
+    <string name="list_no_book">本单无此书！</string>
+    <string name="delete_fail">删除失败！</string>
+    <string name="pay_deposit_fail">交押金失败！</string>
+    <string name="pay_penalty_fail">交罚金失败！</string>
+    <string name="pay_money_fail">交款失败！</string>
+    <string name="pay_money_success">交款成功！</string>
+    <!-- book -->
+    <string name="book_already_in_library">本书已在馆！</string>
+    <string name="book_already_borrowed">本书已办借！</string>
+    <string name="have_dish_deficient">本书已盘亏！</string>
+    <string name="have_lost">本书已赔书！</string>
+    <string name="have_been_sale">本书已售出！</string>
+    <string name="have_stuck_between_old">本书已剔旧！</string>
+    <string name="has_been_out">本书流出锁定！</string>
+    <string name="have_make_appointment">本书已被预约！</string>
+
+    <string name="guard_have_not_borrow">未办借！</string>
+    <string name="guard_have_been_sale">已售出！</string>
+    <string name="guard_have_stuck_between_old">已剔旧！</string>
+    <string name="guard_have_dish_deficient">已盘亏！</string>
+    <string name="guard_have_lost">已赔书！</string>
+
+    <string name="borrow_book_error">借书失败！</string>
+    <string name="deposit_not_enough">押金不足！</string>
+    <string name="only_platform_deposit">只可用共享押金！</string>
+    <string name="no_more_deposit_tip">押金不足，请充值！</string>
+    <string name="empty_content"> </string>
+    <string name="list_deleted">本单已删除！</string>
+    <string name="list_send">本单已发送！</string>
+    <string name="amount_the_deposit_exceeds_the_limit">交押金金额超限值！</string>
+    <string name="current_max_num">当前最多可交%s元！</string>
+
+    <!--reader authentication -->
+    <string name="id_card_number">身份证号</string>
+    <string name="reader_name">姓名</string>
+    <string name="reader_sex">性别</string>
+    <string name="reader_nationality">民族</string>
+    <string name="reader_birthday">出生年月</string>
+
+    <string name="retry_scanning">重新扫描</string>
+    <string name="name_not_empty">姓名不能为空！</string>
+
+    <string name="send_classify_code"><u>发送验证码</u></string>
+    <string name="first_login_change_psw">首次登录，请修改密码</string>
+    <string name="new_psw">新密码</string>
+    <string name="new_psw_not_empty">新密码不能为空！</string>
+    <string name="new_psw_limit_error">长度不少于8位，必须包含大小写字母和数字！</string>
+    <string name="new_psw_not_same">新密码不一致！</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="155dp"
+    android:layout_height="155dp"
+    android:background="@mipmap/ic_video_vioce_bg">
+
+    <ImageView
+        android:id="@+id/ic_video_controller_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_video_light_logo" />
+
+    <TextView
+        android:id="@+id/ic_video_controller_desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="亮度"
+        android:textColor="#333333"
+        android:textSize="17sp" />
+
+    <SeekBar
+        android:id="@+id/ic_video_controller_sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:max="100"
+        android:maxHeight="7dp"
+        android:minHeight="7dp"
+        android:progressDrawable="@drawable/ic_video_controller_sb_drawable"
+        android:scrollbars="horizontal"
+        android:thumb="@null" />
+
+    <TextView
+        android:id="@+id/ic_video_progress_desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="静音"
+        android:textColor="#333333"
+        android:textSize="13sp"
+        android:visibility="gone" />
+</RelativeLayout>

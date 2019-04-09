@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/outflow_date"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="日期"
+        android:textColor="#888888"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/library_number"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/outflow_date"
+        android:layout_toRightOf="@+id/outflow_date"
+        android:singleLine="true"
+        android:text="流向馆"
+        android:textColor="#888888"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/library_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toEndOf="@+id/library_number"
+        android:layout_toLeftOf="@+id/textViewPerson"
+        android:layout_toRightOf="@+id/library_number"
+        android:layout_toStartOf="@+id/textViewPerson"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="馆名"
+        android:textColor="#888888"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewPerson"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="操作员"
+        android:textColor="#888888"
+        android:textSize="15sp" />
+
+</RelativeLayout>

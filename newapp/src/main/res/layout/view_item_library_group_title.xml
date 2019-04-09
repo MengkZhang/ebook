@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/group_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_EFEFEF" />
+
+    <TextView
+        android:id="@+id/group_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/ic_library_group_title_icon"
+        android:drawablePadding="8dp"
+        android:drawableStart="@mipmap/ic_library_group_title_icon"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        tools:text="上级馆" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5" />
+
+</LinearLayout>

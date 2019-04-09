@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tzpt.cloudlibrary.widget.camera.ScanWrapper
+            android:id="@+id/self_book_camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_000000" />
+
+        <LinearLayout
+            android:id="@+id/self_book_reader_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/self_book_total_layout"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/self_book_reader_borrowable_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:textColor="#ccc"
+                android:textSize="16sp"
+                tools:text="可借 0" />
+
+            <TextView
+                android:id="@+id/self_book_reader_usable_deposit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:textColor="#ccc"
+                android:textSize="16sp"
+                tools:text="欠逾期罚金 0.00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/self_book_total_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/operate_btn_ll"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/self_book_sum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:textColor="#ccc"
+                android:textSize="15sp"
+                tools:text="数量 0" />
+
+            <TextView
+                android:id="@+id/self_book_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:textColor="#ccc"
+                android:textSize="15sp"
+                tools:text="金额 0.00" />
+
+            <TextView
+                android:id="@+id/self_book_take_deposit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:textColor="#ccc"
+                android:textSize="15sp"
+                tools:text="押金 0.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/operate_btn_ll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_light"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000"
+                android:drawableTop="@mipmap/ic_light"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="手电筒"
+                android:textColor="#ccc"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_back"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000"
+                android:drawableTop="@mipmap/ic_back_list"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="返回清单"
+                android:textColor="#ccc"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_common_title_bar" />
+
+</FrameLayout>

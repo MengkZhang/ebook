@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <com.tzpt.cloundlibrary.manager.widget.PickerView
+        android:id="@+id/hour_pv"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_weight="1.0"
+        android:paddingEnd="1dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="1dp"
+        android:paddingStart="40dp" />
+
+    <com.tzpt.cloundlibrary.manager.widget.PickerView
+        android:id="@+id/minute_pv"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_weight="1.0"
+        android:paddingEnd="1dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="1dp"
+        android:paddingStart="40dp" />
+</LinearLayout>

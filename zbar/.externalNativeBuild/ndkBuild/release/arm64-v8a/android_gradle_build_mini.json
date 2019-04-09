@@ -1,0 +1,23 @@
+{
+  "buildFiles": [
+    "D:\\android_work\\work_space\\zbar\\src\\main\\jni\\Android.mk",
+    "D:\\android_work\\work_space\\zbar\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Administrator.ZX-201706160908\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\android_work\\work_space\\zbar\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\android_work\\work_space\\zbar\\src\\main\\jni\\Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dD:/android_work/work_space/zbar/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\android_work\\work_space\\zbar\\build\\intermediates\\ndkBuild\\release\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk clean"
+  ],
+  "libraries": {
+    "iconv-release-arm64-v8a": {
+      "artifactName": "iconv",
+      "buildCommand": "C:\\Users\\Administrator.ZX-201706160908\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\android_work\\work_space\\zbar\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\android_work\\work_space\\zbar\\src\\main\\jni\\Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dD:/android_work/work_space/zbar/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\android_work\\work_space\\zbar\\build\\intermediates\\ndkBuild\\release\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk D:/android_work/work_space/zbar/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libiconv.so",
+      "abi": "arm64-v8a",
+      "output": "D:\\android_work\\work_space\\zbar\\build\\intermediates\\ndkBuild\\release\\obj\\local\\arm64-v8a\\libiconv.so"
+    },
+    "zbar-release-arm64-v8a": {
+      "artifactName": "zbar",
+      "buildCommand": "C:\\Users\\Administrator.ZX-201706160908\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\android_work\\work_space\\zbar\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\android_work\\work_space\\zbar\\src\\main\\jni\\Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dD:/android_work/work_space/zbar/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\android_work\\work_space\\zbar\\build\\intermediates\\ndkBuild\\release\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk D:/android_work/work_space/zbar/build/intermediates/ndkBuild/release/obj/local/arm64-v8a/libzbar.so",
+      "abi": "arm64-v8a",
+      "output": "D:\\android_work\\work_space\\zbar\\build\\intermediates\\ndkBuild\\release\\obj\\local\\arm64-v8a\\libzbar.so"
+    }
+  }
+}

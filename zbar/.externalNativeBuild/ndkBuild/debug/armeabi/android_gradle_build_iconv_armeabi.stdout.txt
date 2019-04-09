@@ -1,0 +1,1 @@
+make: `D:/android_work/work_space/zbar/build/intermediates/ndkBuild/debug/obj/local/armeabi/libiconv.so' is up to date.

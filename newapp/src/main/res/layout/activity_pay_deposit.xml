@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.deposit.PayDepositActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_total_deposit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_toolbar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:drawableEnd="@mipmap/ic_orange_arrow"
+        android:drawableRight="@mipmap/ic_orange_arrow"
+        android:singleLine="true"
+        android:textColor="@color/color_906c48"
+        android:textSize="17sp"
+        tools:text="押金余额 50.00" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/user_total_deposit_tv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/pay_deposit_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pay_deposit_10"
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_item_deposit_border"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:text="充10元"
+                    android:textColor="#9e724d"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/pay_deposit_50"
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_item_deposit_border"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:text="充50元"
+                    android:textColor="#9e724d"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/pay_deposit_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pay_deposit_100"
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_item_deposit_border"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:text="充100元"
+                    android:textColor="#9e724d"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/pay_deposit_200"
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_item_deposit_border"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:text="充200元"
+                    android:textColor="#9e724d"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/pay_deposit_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/pay_deposit_constant"
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_item_deposit_border"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textColor="#9e724d"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1.0" />
+            </RadioGroup>
+
+            <include layout="@layout/view_pay_deposit_type" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pay_deposit_protocol_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/bg_pay_protocol_check"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/pay_deposit_protocol_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="我已阅读并同意《用户服务协议》"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pay_deposit_confirm_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_pay_comfirm"
+                android:enabled="false"
+                android:text="确定"
+                android:textColor="@color/color_ffffff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.tzpt.cloudlibrary.widget.LoadingProgressView
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar" />
+</RelativeLayout>

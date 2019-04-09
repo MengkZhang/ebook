@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_middle">13.5dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_3dp">3dp</dimen>
+    <dimen name="crop_photo_margin">20dp</dimen>
+    <dimen name="crop_photo_stroke_width">1dp</dimen>
+</resources>

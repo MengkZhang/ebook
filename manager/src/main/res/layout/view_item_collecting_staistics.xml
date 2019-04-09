@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/collecting_date"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="@string/text_collect_date"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/collecting_order_number"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/collecting_date"
+        android:layout_toRightOf="@+id/collecting_date"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="@string/text_collect_order_number"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/collecting_project"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/collecting_order_number"
+        android:layout_toRightOf="@+id/collecting_order_number"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="@string/text_collect_project"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/book_operator"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:gravity="end|center_vertical"
+        android:singleLine="true"
+        android:text="@string/text_collect_operator"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/book_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/collecting_project"
+        android:layout_toRightOf="@+id/collecting_project"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@+id/book_operator"
+        android:layout_toStartOf="@+id/book_operator"
+        android:gravity="end|center_vertical"
+        android:singleLine="true"
+        android:text="@string/text_collect_price"
+        android:textColor="#444444"
+        android:textSize="14sp" />
+</RelativeLayout>

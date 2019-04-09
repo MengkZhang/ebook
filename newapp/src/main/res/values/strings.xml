@@ -1,0 +1,469 @@
+<resources>
+    <string name="app_name">跳蚤云图</string>
+    <!-- 图书信息 -->
+    <string name="book_list_tips">%1$d/%2$d种</string>
+    <string name="book_list_tips_for_library">%1$d/%2$d种/%3$d册</string>
+    <string name="book_list_tips_for_borrow">%1$d/%2$d册</string>
+    <string name="book_list_author">作者</string>
+    <string name="book_list_isbn">ISBN</string>
+    <string name="book_list_publisher">出版社</string>
+    <string name="book_list_publish_date">出版年</string>
+    <string name="book_list_publish_category_name">类别</string>
+    <string name="search">搜索</string>
+    <string name="no_summary">暂无简介</string>
+    <string name="statistics_borrow_count">%d人借阅</string>
+    <string name="statistics_praise_count">%d人点赞</string>
+    <string name="statistics_recommend_count">%d人荐购</string>
+    <string name="statistics_read_count">%d人阅读</string>
+    <string name="have_other_time">余</string>
+    <string name="have_other_time_hour">小时</string>
+    <string name="have_other_time_day">天</string>
+    <string name="have_other_time_today">今日到期</string>
+    <string name="have_other_time_due_time">逾期</string>
+    <string name="have_bought">已购买</string>
+    <string name="have_re_buy">已赔书</string>
+    <string name="have_return">已还书</string>
+    <!-- 公共提示语 -->
+    <string name="load_failed">加载失败，点击重新加载！</string>
+    <string name="found_0_data">发现0条数据！</string>
+    <string name="network_fault">网络请求失败！</string>
+    <string name="loading">加载中…</string>
+    <string name="deleting">删除中...</string>
+    <string name="sending">发送中...</string>
+    <string name="emoji_tips">内容可能含有表情，请修改重试！</string>
+
+    <!-- 图书馆详情-->
+    <string name="text_library_introduce">本馆介绍</string>
+    <string name="text_library_information">本馆资讯</string>
+    <string name="text_library_grade">查看分馆</string>
+    <string name="text_library_super_grade">上级馆</string>
+    <string name="temporarily_no_data">暂无数据！</string>
+
+    <!-- 开放时间-->
+    <string name="text_open_time">开放时间</string>
+    <string name="long_to_open">定期开放</string>
+    <string name="today_open_time">今日开放</string>
+    <string name="supervise_the_phone">投诉电话</string>
+    <string name="constant_phone_number">联系电话</string>
+    <string name="call_phone_number">是否拨打联系电话？</string>
+    <string name="whether_the_complaint_calls">是否拨打投诉电话？</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <!--图书馆详情 -->
+    <string name="pager_books">馆藏图书%s册</string>
+    <string name="ebooks">电子书%s种</string>
+    <string name="library_list_tips">%1$d/%2$d</string>
+    <string name="bar_number">条码号</string>
+    <string name="bar_number2">条码号%s</string>
+    <string name="frame_code">排架号 %s</string>
+    <string name="call_number">索书号 %s</string>
+    <string name="call_number2">索书号</string>
+    <string name="stay_library2">所在馆</string>
+    <string name="source">来源：%s</string>
+    <string name="sponsor">主办方：%s</string>
+    <string name="borrow_book_date">借阅日</string>
+    <string name="bought_time">时间</string>
+    <string name="bought_money">金额</string>
+
+    <!-- 登录 -->
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="error_invalid_email">用户名错误！</string>
+    <string name="error_invalid_password">密码为6位数字！</string>
+    <string name="error_incorrect_password">密码不能为空！</string>
+    <string name="error_field_required">用户名不能为空！</string>
+    <string name="error_compare_new_password">新密码不一致！</string>
+    <string name="error_compare_password">密码设置不一致！</string>
+    <string name="new_pwd_empty_tip">新密码不能为空！</string>
+    <string name="id_card_not_register">"账号未注册！"</string>
+    <string name="password_error">密码错误！</string>
+    <string name="account_or_pwd_error">用户名或密码错误！</string>
+    <string name="not_banding_phone">手机号未绑定！</string>
+    <string name="login_failure">身份验证失败!</string>
+    <string name="digits_txt">0123456789Xx</string>
+    <string name="modify_user_head_failed">修改头像失败，是否重试？</string>
+    <!--账户信息 -->
+    <string name="expireCount">已逾期：%1$d</string>
+    <string name="exit_from_current_account">退出当前账号</string>
+    <string name="exit_login_prompt">退出登录，您将无法收到逾期报警信息，确定退出？</string>
+    <string name="new_last_version">(最新版本号：V%s)</string>
+    <!-- 分享-->
+    <string name="not_installed_qq_client">未安装QQ客户端！</string>
+    <string name="not_installed_wx_client">未安装微信客户端！</string>
+    <string name="not_installed_sina_client">未安装新浪微博客户端！</string>
+    <string name="share_success">分享成功！</string>
+    <string name="share_fail">分享失败！</string>
+    <string name="share_cancel">分享取消！</string>
+    <!-- 馆押金-->
+    <string name="deposit_0">您的押金为0.00元!</string>
+    <string name="library_deposit">单位押金 %s</string>
+    <string name="overdue_fines">您尚欠逾期罚金%s元，请及时补交！</string>
+    <string name="platform_deposit">平台押金 %s</string>
+    <string name="canuse_deposit">可用押金 %s</string>
+    <string name="library_canues_deposit">可用押金 %s</string>
+    <string name="usable_deposit">可用 %s</string>
+    <string name="deposit_balance_occupy_deposit">押金余额 %1s&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;占用押金 %2s</string>
+    <string name="deposit_balance_penalty">押金余额 %1s&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;逾期罚金 %2s</string>
+    <string name="deposit_balance">押金余额 %s</string>
+    <string name="library_deposit_code">单位代码</string>
+    <string name="library_deposit_name">单位名称</string>
+    <string name="library_deposit_money">金额</string>
+    <string name="library_deposit_can_use">可用</string>
+    <string name="pay_deposit_constant_money">充%s元</string>
+
+    <!-- 修改密码-->
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="change_success">修改成功！</string>
+    <string name="change_failure">修改失败！</string>
+    <string name="old_pwd_error">原密码错误</string>
+    <string name="has_days">余%s天</string>
+    <string name="during_time">期间 %s</string>
+    <string name="during_time2">有效期： %s</string>
+    <string name="borrow_date">借书%s</string>
+    <string name="return_date">还书%s</string>
+    <string name="lost_date">赔书%s</string>
+    <string name="buy_date">购买%s</string>
+    <!-- 读书笔记-->
+    <string name="save_success">保存成功！</string>
+    <string name="save_failure">保存失败！</string>
+    <string name="success">成功！</string>
+    <string name="failure">失败！</string>
+    <string name="input_phone">1234567890</string>
+    <string name="note_content_empty">内容不能为空！</string>
+    <!--修改手机号 -->
+    <string name="repeat_original_number">与原号码重复！</string>
+    <string name="phone_number_can_not_empty">手机号不能为空！</string>
+    <string name="phone_number_wrong">手机号错误！</string>
+    <string name="code_can_not_empty">验证码不能为空！</string>
+    <string name="code_wrong">验证码错误！</string>
+    <!--推荐新书 -->
+    <string name="already_recommend_book_sum">您已推荐%d册</string>
+    <string name="can_recommend_book_sum">本月还可推荐%d册</string>
+    <string name="have_been_recommend">已经推荐此书！</string>
+    <string name="no_more_recommend_count">当月推荐次数已满！</string>
+    <string name="enter_ISBN_number">请输入ISBN号！</string>
+    <string name="ISBN_code_error">ISBN错误！</string>
+    <string name="no_book_information">暂无此书资料！</string>
+
+    <!-- library-->
+    <string name="reader_current_position">当前位置：%s</string>
+    <string name="reader_current_position_weak">GPS信号弱，请在开阔处重新定位！</string>
+    <string name="reader_current_position_no_permission">未开启定位！</string>
+    <string name="book_sum">藏书  %s  册</string>
+
+    <string name="app_update_log">更新日志 %s</string>
+    <string name="app_update_time">更新时间 %s</string>
+    <string name="letter_list">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</string>
+    <string name="can_use_deposit">可用押金 %s</string>
+    <string name="take_deposit">占用押金 %s</string>
+
+    <string name="online_available_balance">线上可退 %s</string>
+    <string name="offline_available_balance">线下可退 %s</string>
+    <string name="money_not_empty">金额不能为空！</string>
+    <string name="enter_correct_amount">请输入正确的金额！</string>
+    <string name="withdraw_deposit_more_than_one">提现金额不小于1元！</string>
+    <string name="have_penalty_can_not_withdraw_deposit">存在逾期罚金未处理，无法退押金！</string>
+    <string name="withdraw_deposit_limit_money_once">您单次最多能退%s元！</string>
+    <string name="withdraw_deposit_limit_money">您最多能退%s元！</string>
+    <string name="withdraw_deposit_success">退押金成功!预计0~7个工作日到账！</string>
+    <string name="withdraw_deposit_failed">退押金失败！</string>
+    <string name="withdraw_deposit_wx">微信退款预计4月1日开通，给您带来不便，敬请谅解！</string>
+
+    <string name="wechat_not_empty">微信账户不能为空！</string>
+    <string name="alipay_not_empty">支付宝账户不能为空！</string>
+    <string name="name_not_empty">实名认证不能为空！</string>
+
+    <string name="library_hall_code">馆号：%s</string>
+    <string name="library_name">馆名：%s</string>
+    <string name="library_mail">邮箱：%s</string>
+    <string name="library_tel"><![CDATA[ <font size=16sp color=#999999>电话：</font><font size=16sp color=#3996CF>%1$s</font> ]]></string>
+    <string name="library_net"><![CDATA[ <font size=16sp color=#999999>网站：</font><font size=16sp color=#3996CF>%1$s</font> ]]></string>
+    <string name="library_address"><![CDATA[  <img src="R.mipmap.position"></img>]]></string>
+    <string name="change_attention_lib_tip">是否替换已关注的%s？</string>
+    <string name="attention_failed">关注失败，请重试</string>
+    <string name="attention_success">已关注</string>
+    <string name="cancel_attention_failed">取消关注失败，请重试</string>
+    <string name="cancel_attention_success">已取消</string>
+    <string name="set_attention_lib"><u>前往设置</u></string>
+    <!-- 图书预约-->
+    <string name="order_book_success">预约成功！\n请%s于24小时内到馆办借\n预约每日限2册，每月限6册</string>
+    <string name="order_book_failed_too_more">预约超限次！\n预约每日限2册，每月限6册</string>
+    <string name="order_book_failed_no_permission">预约失败！\n您在该图书馆无预约权限！</string>
+    <string name="order_book_failed_unable_borrow">预约失败！\n本书不支持外借！</string>
+    <string name="order_book_failed_no_book">预约失败！\n暂无可预约书籍！</string>
+    <string name="order_book_failed">预约失败！</string>
+    <string name="cancel_reservation_tip">确定取消预约?</string>
+
+    <string name="borrow_book_lib_info"><![CDATA[ <font size=16sp color=#666666>%1$s</font><font size=16sp color=#ee7853> %2$s</font> ]]></string>
+    <string name="read_count">阅读 %d</string>
+
+    <string name="location_failed">定位失败！</string>
+    <string name="location_loading">定位中......</string>
+    <!-- 绑定修改手机号-->
+    <string name="change_phone_num">更改手机号</string>
+    <string name="binding_phone_num">绑定手机号</string>
+    <string name="send_verify_code">发送验证码</string>
+    <string name="send_verify_code_again">再次发送</string>
+    <string name="account_login_other_device">账号已在其它设备登录，请确认是否本人操作！</string>
+    <string name="send_verify_code_failed">发送失败！</string>
+    <string name="send_verify_code_success">发送成功！</string>
+    <string name="phone_num_exist">手机号已存在！</string>
+    <string name="binding_phone_num_success">绑定手机号成功！</string>
+    <string name="binding_phone_num_failed">绑定手机号失败！</string>
+    <string name="modify_binding_phone_num_success">修改手机号成功！</string>
+    <string name="modify_binding_phone_num_failed">修改手机号失败！</string>
+    <string name="verify_code_invalid">验证码无效！</string>
+    <string name="read_count_ebook">%d人阅读</string>
+
+    <!--忘记密码 -->
+    <string name="idcard_empty_tip">身份证号不能为空！</string>
+    <string name="idcard_error_tip">身份证号错误！</string>
+    <string name="phone_code_not_fit">手机号不一致！</string>
+    <string name="forget_pwd_no_binding_phone">您的证件未绑定手机号，请持证到就近云图书馆办理！</string>
+    <string name="forget_pwd_no_register">您的身份证未注册,请持证件原件到附近云图书馆平台办理！</string>
+    <string name="forget_pwd_next">下一步</string>
+    <string name="forget_pwd_change_phone_tip">如果您已更换手机号，请持证件原件到附近云图书馆平台办理！</string>
+    <!-- 读友会报名-->
+    <string name="action_been_start_cant_apply">活动已经开始，不允许报名！</string>
+    <string name="action_register_user_tip">已注册请登录报名！</string>
+    <string name="action_been_apply">已报名！</string>
+    <string name="action_apply_success">报名成功！</string>
+    <string name="the_registration_is_full">报名已满！</string>
+    <string name="activity_time">%s - %s</string>
+    <string name="activity_address">地址：%s</string>
+
+    <!-- 自助借书-->
+    <string name="can_borrow_book_sum">可借 %d</string>
+    <string name="can_borrow_book_owe_fine">欠逾期罚金 %s</string>
+    <string name="can_borrow_book_owe_fine3">您欠逾期罚金 %s元</string>
+    <string name="can_borrow_book_price">可用押金 %s</string>
+    <string name="scan_repeat_bar">重复录入！</string>
+    <string name="bar_code_not_exist">条码号不存在！</string>
+    <string name="ultra_limit">超限值！</string>
+    <string name="borrow_book_error">借书失败！</string>
+    <string name="deposit_not_enough">押金不足,请交押金！</string>
+    <string name="current_book_deposit_not_enough">押金不足，请联系管理员！</string>
+    <string name="reader_does_not_exist">账号不存在！</string>
+    <string name="not_library_reader">非本馆读者！</string>
+    <string name="library_has_stopped">本馆已停用！</string>
+    <string name="library_limit_book_circulation">本书限制流通！</string>
+    <string name="library_limit_book">本书限制通还！</string>
+    <string name="book_already_in_library">本书已在馆！</string>
+    <string name="book_already_borrowed">本书已办借！</string>
+    <string name="have_dish_deficient">本书已盘亏！</string>
+    <string name="have_lost">本书已赔书！</string>
+    <string name="have_stuck_between_old">本书已剔旧！</string>
+    <string name="has_been_out_locked">本书流出锁定！</string>
+    <string name="has_been_out">本书已流出！</string>
+    <string name="have_make_appointment">本书已被预约！</string>
+    <string name="not_library_book">非本馆书籍！</string>
+    <string name="book_not_borrow">本书不外借！</string>
+    <string name="library_is_stop">该馆已停用！</string>
+    <string name="please_to_self_borrowing_machine">请至自助借还机上办借！</string>
+
+
+    <string name="epb_download_failed">电子书下载失败，请重试！</string>
+
+    <string name="borrow_appoint_count">预约%d</string>
+    <string name="borrow_current_count">在借%d</string>
+    <string name="borrow_overdue_count">逾期%d</string>
+
+    <string name="register_count">报名%d</string>
+    <string name="msg_count">消息%d</string>
+
+    <string name="user_current_borrow_overdue"><![CDATA[ <font color=#b0b0b0>%1$d </font><font color=#ee7853>逾期%2$d</font> ]]></string>
+    <string name="share_lib"><![CDATA[<font color=#ee7853>（共享书屋）</font> ]]></string>
+
+    <string name="current_version">V%s</string>
+    <string name="last_current_version_tip">当前已是最新版本！</string>
+    <string name="verify_reader_id_info">你的身份信息未进行真实性验证无法使用该功能，请至图书馆扫描认证！</string>
+    <string name="sum_text">数量 %s</string>
+    <string name="money_text">金额 %s</string>
+    <string name="buy_price">金额：%s</string>
+    <string name="fixed_price">码洋：%s</string>
+    <string name="fixed_price2">码洋 %s</string>
+    <string name="delete">删除</string>
+    <string name="amount_error">金额错误！</string>
+    <string name="already_lost_book">赔书失败！</string>
+    <string name="lost_book_success">赔书成功！</string>
+
+    <!-- 留言板-->
+    <string name="leave_submit_failure">留言提交失败！</string>
+    <string name="leave_submit_success">留言提交成功！</string>
+    <string name="content_not_empty">内容不能为空！</string>
+    <string name="content_have_not_submit">有内容未提交，是否离开？</string>
+
+    <string name="pay_failed">充值失败！</string>
+    <string name="pay_success">充值成功！</string>
+    <string name="pay_dealing">处理中！</string>
+    <string name="pay_deposit_limit">交押金金额超限值！</string>
+    <string name="pay_deposit_limit_tip"><![CDATA[ <font>支付失败！<br/>当前最多可交</font><font color=#ee7853>%s</font><font>元！</font>]]></string>
+
+    <string name="discuss_more_reply">查看全部%d条回复</string>
+    <string name="reply_number">%d条回复</string>
+    <string name="this_discuss_deleted">该评论已删除！</string>
+    <string name="this_message_deleted">该留言已删除！</string>
+    <string name="this_reply_deleted">该回复已删除！</string>
+    <string name="look_original">查看原文</string>
+    <string name="publish_discuss_success">评论成功！</string>
+    <string name="publish_discuss_failure">评论失败！</string>
+    <string name="publish_message_success">留言成功！</string>
+    <string name="publish_message_failure">回复失败！</string>
+    <string name="publish_reply_success">回复成功！</string>
+    <string name="publish_reply_failure">留言失败！</string>
+    <!-- 注册-->
+    <string name="register">注册</string>
+    <string name="register_fail">注册失败！</string>
+    <string name="idcard_already_registered">身份证已注册！</string>
+    <string name="verify_real_name">实名认证</string>
+    <string name="set_psw">设置密码</string>
+    <string name="confirm">确定</string>
+    <string name="start_login_right_now">立即登录</string>
+    <string name="binding_id_card_number">该手机号已被\n身份证%s绑定"</string>
+    <string name="please_complete_id_card_register">请联系管理人员或到自助注册设备上完成身份证刷证注册！</string>
+    <string name="error_id_card_info">身份证信息有误！</string>
+
+
+    <!-- face upload-->
+    <string name="upload_success">保存成功！</string>
+    <string name="upload_fail">保存失败！</string>
+    <string name="re_upload">重新保存</string>
+    <string name="re_take_pic">重拍</string>
+    <string name="use_pic">使用照片</string>
+    <string name="cancel">取消</string>
+    <string name="complete_face_photo">完善人脸照片</string>
+    <string name="change_face_photo">更换人脸照片</string>
+    <string name="face_photo">人脸照片</string>
+
+    <!-- classify select layout-->
+    <string name="month_rank">月榜</string>
+    <string name="quarter_rank">季榜</string>
+    <string name="year_rank">年榜</string>
+    <string name="a_popular">一周热门</string>
+    <string name="new_releases">最新上架</string>
+    <string name="type">分类</string>
+    <string name="all_type">全部分类</string>
+
+    <string name="srl_header_pulling">下拉可以刷新</string>
+    <string name="srl_header_refreshing">正在刷新…</string>
+    <string name="srl_header_loading">正在加载…</string>
+    <string name="srl_header_release">释放立即刷新</string>
+    <string name="srl_header_finish">刷新完成</string>
+    <string name="srl_header_failed">刷新失败</string>
+    <string name="srl_header_update">上次更新 M-d HH:mm</string>
+    <string name="srl_header_secondary">释放进入二楼</string>
+
+    <string name="srl_footer_pulling">上拉加载更多</string>
+    <string name="srl_footer_release">释放立即加载</string>
+    <string name="srl_footer_loading">正在加载…</string>
+    <string name="srl_footer_refreshing">正在刷新…</string>
+    <string name="srl_footer_finish">加载完成</string>
+    <string name="srl_footer_failed">加载失败</string>
+    <string name="srl_footer_nothing">没有更多数据了</string>
+
+    <string name="srl_content_empty">SmartRefreshLayout中没有找到内容视图。您是否忘记在xml布局文件中添加？</string>
+    <string name="srl_component_falsify" formatted="false">%s 虚假区域\n代表运行时拖动的高度【%.1fdp】 \n而不会显示任何东西</string>
+
+    <string name="ac_load_last_page">加载上一篇</string>
+    <string name="ac_load_next_page">加载下一篇</string>
+    <string name="ac_already_no_one_page">已是第一篇</string>
+    <string name="ac_already_latest_page">已是最后一篇</string>
+
+    <string name="deposit_not_enough_recharge">押金不足,请充值押金！</string>
+    <string name="compensate_price">赔价 %s</string>
+    <string name="book_status_success_sum">%d本成功</string>
+    <string name="book_status_failure_sum">%d本失败</string>
+    <string name="recommend_unit">推荐单位：%s</string>
+    <string name="please_charge">押金不足，请先充值！</string>
+    <string name="please_to_platform">押金不足\n大于1000押金请到就近云图书馆处理！</string>
+    <string name="please_to_platform_dialog">押金不足\n大于1000押金请到就近云图书馆处理！</string>
+    <string name="please_to_library">押金不足，请到图书馆交押金！</string>
+    <string name="please_to_library_dialog">押金不足\n请到图书馆交押金！</string>
+
+    <string name="bill_detail_deduction_money">(占押金抵扣%s)</string>
+    <!-- video -->
+    <string name="video_lightness">亮度</string>
+    <string name="video_voice">音量</string>
+    <string name="video_no_voice">静音</string>
+    <string name="video_watch_times">%s次播放</string>
+    <string name="collect_video_success">收藏成功！</string>
+    <string name="collect_video_fail">收藏失败！</string>
+    <string name="cancel_collect_video">取消收藏成功！</string>
+    <string name="class_desc">课程介绍</string>
+
+    <string name="download_load_total_size">%1$s/%2$s</string>
+    <string name="download_speed">%s/s</string>
+    <string name="download_memory_space_tip">已下载 %1$s，可用空间 %2$s</string>
+    <string name="del_count">删除(%d)</string>
+    <string name="delete_fail">删除失败！</string>
+    <string name="collecting">收藏中...</string>
+    <string name="canceling">取消中...</string>
+    <string name="complete_video_set_info">已缓存%1$d集 | %2$s</string>
+    <string name="local_video_not_exist">视频文件不存在！</string>
+    <string name="playing_download_video">正在播放已下载的视频</string>
+
+    <string name="mobile_net_tip1">当前运营商网络下已为您暂停下载，如仍需下载请在“设置”中更改</string>
+    <string name="mobile_net_tip2">您已设置允许运营商网络下下载视频，可能产生超额流量费，是否继续下载？</string>
+    <string name="change_setting">更改设置</string>
+    <string name="download_resume">继续下载</string>
+    <string name="download_only_wifi">仅WIFI下载</string>
+    <string name="no_net_try_later">无网络，请连接网络后重试</string>
+    <string name="download_under_mobile_net">正在运营商网络下下载视频</string>
+    <string name="current_setting_only_wifi">当前设置只在WIFI下下载视频</string>
+    <string name="open_switch_download_under_mobile_net_tip">运营商网络下下载可能会导致超额流量，确认开启？</string>
+    <string name="open_mobile_net_switch">开启</string>
+
+    <!-- 自助购书 -->
+    <string name="this_book_not_sell">本书不外售！</string>
+    <string name="this_book_already_sell">本书已售出！</string>
+    <string name="please_input_reader_psw">请输入账户密码</string>
+    <string name="confirm_use_deposit">确认扣押金</string>
+    <string name="confirm_self_buy_book">请确认购书</string>
+    <string name="self_buy_book_fail">购书失败！</string>
+    <string name="charge_deposit">平台押金不足，请先充值！</string>
+    <string name="total_text">合计</string>
+    <string name="buy_book_time">购书时间：%s</string>
+    <string name="has_overdue_borrow_book_sum">您当前有%d本在借图书即将逾期，请及时处理！</string>
+    <string name="had_pay_penalty">已扣除未处理的罚金%s元！</string>
+    <string name="Owe_fine">欠罚金金额：%s</string>
+    <string name="had_penalty_not_handle">存在逾期罚金未处理！</string>
+    <string name="home_library_person_count">%s人</string>
+    <string name="home_library_book_count">%s册</string>
+    <string name="review_book_count">%s人借阅</string>
+    <string name="book_detail_line_status">┈</string>
+    <string name="library_book_recommend">荐</string>
+    <string name="recommend_success">荐购成功！</string>
+    <string name="nick_name_not_empty">昵称不能为空！</string>
+    <string name="error_nick_name"><![CDATA[昵称可能包含<>/等特殊符号，请修改重试！]]></string>
+    <string name="error_nick_name_to_retry">昵称可能含有敏感词汇，请修改重试！</string>
+    <string name="stay_library">所在馆</string>
+    <string name="common_return_library">通还馆</string>
+    <string name="user_nick_name_tips">昵称由中文、英文、数字、-和_组成。</string>
+    <string name="nick_name">昵称</string>
+    <string name="take_picture">拍照</string>
+    <string name="choose_picture">手机相册选择</string>
+    <string name="system_picture">系统推荐头像</string>
+    <string name="click_to_login">点击登录</string>
+    <string name="cancel_attention_library">是否取消关注？</string>
+    <string name="click_again_leave_cloud_library">再按一次退出跳蚤云图!</string>
+
+    <string name="open_limit">开放模式：%s</string>
+    <string name="open_today">今日\u3000%s</string>
+    <string name="open_time_today">营业\u3000%s</string>
+    <string name="lib_address">地址\u3000%s</string>
+    <string name="one_key_navigation">导航\u3000</string>
+
+    <string name="space">\u3000\u3000\u3000</string>
+    <string name="book_count">&#160;(%1$d册)</string>
+    <string name="ebook_count">&#160;(%1$d种)</string>
+    <string name="video_count">&#160;(%1$d条)</string>
+    <string name="activity_count">&#160;(%1$d个)</string>
+    <string name="set_attention">设为关注</string>
+    <string name="galley">galley</string>
+    <string name="ebook_num">种</string>
+    <string name="book_num">本</string>
+    <string name="av_num">条</string>
+    <string name="book_people">人</string>
+    <string name="over_due">逾期</string>
+</resources>

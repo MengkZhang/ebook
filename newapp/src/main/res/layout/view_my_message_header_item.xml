@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_common"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/msg_reader_head_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="true"
+        android:src="@mipmap/ic_head_mr" />
+
+    <TextView
+        android:id="@+id/msg_reader_retry_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/msg_reader_head_iv"
+        android:layout_toRightOf="@+id/msg_reader_head_iv"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        tools:text="王女士回复了您的评论" />
+
+    <ImageView
+        android:id="@+id/msg_reader_msg_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@null"
+        android:padding="10dp"
+        android:src="@drawable/bg_btn_msg" />
+
+    <TextView
+        android:id="@+id/msg_reader_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg_reader_retry_name_tv"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/msg_reader_head_iv"
+        android:layout_toRightOf="@+id/msg_reader_head_iv"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        tools:text="全民阅读很不错，希望国民多多参与，提升素的坑的疯狂发方法发点击个地方。" />
+
+    <TextView
+        android:id="@+id/msg_reader_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg_reader_content_tv"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        tools:text="20170921  18:30:00" />
+
+</RelativeLayout>

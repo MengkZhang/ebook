@@ -1,0 +1,15 @@
+Executable : C:\Users\Administrator.ZX-201706160908\AppData\Local\Android\Sdk\ndk-bundle\ndk-build.cmd
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=D:\android_work\work_space\zbar\src\main\jni\Android.mk
+NDK_APPLICATION_MK=D:\android_work\work_space\zbar\src\main\jni\Application.mk
+APP_ABI=x86
+NDK_ALL_ABIS=x86
+NDK_DEBUG=1
+APP_PLATFORM=android-14
+NDK_OUT=D:/android_work/work_space/zbar/build/intermediates/ndkBuild/debug/obj
+NDK_LIBS_OUT=D:\android_work\work_space\zbar\build\intermediates\ndkBuild\debug\lib
+NDK_APPLICATION_MK:=src/main/jni/Application.mk
+D:/android_work/work_space/zbar/build/intermediates/ndkBuild/debug/obj/local/x86/libiconv.so
+jvmArgs : 
+

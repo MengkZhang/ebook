@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_translate_common"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/information_cover_cv"
+        android:layout_width="98dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="5.5dp"
+        android:layout_marginLeft="13.5dp"
+        android:layout_marginStart="13.5dp"
+        android:layout_marginTop="5.5dp"
+        android:background="@mipmap/bg_round_shadow">
+
+        <ImageView
+            android:id="@+id/information_pic_iv"
+            android:layout_width="93dp"
+            android:layout_height="68dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/shadow_cover_iv"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@+id/information_pic_iv"
+            android:layout_alignEnd="@+id/information_pic_iv"
+            android:layout_alignRight="@+id/information_pic_iv"
+            android:background="@drawable/bg_gradient_round60f"
+            android:contentDescription="@null" />
+
+
+        <TextView
+            android:id="@+id/information_video_play_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/information_pic_iv"
+            android:layout_alignEnd="@+id/information_pic_iv"
+            android:layout_alignRight="@+id/information_pic_iv"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@mipmap/ic_video_play_tag"
+            android:drawablePadding="4dp"
+            android:drawableStart="@mipmap/ic_video_play_tag"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_ffffff"
+            android:textSize="9sp"
+            tools:text="01:36:00" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/information_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/information_cover_cv"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/information_cover_cv"
+        android:layout_toRightOf="@+id/information_cover_cv"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="4dp"
+        android:maxLines="2"
+        android:minLines="2"
+        android:padding="0dp"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp"
+        tools:text="作家房东国推动社会教育" />
+
+    <TextView
+        android:id="@+id/information_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/information_cover_cv"
+        android:layout_alignLeft="@+id/information_title_tv"
+        android:layout_alignStart="@+id/information_title_tv"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/information_preview_count_tv"
+        android:layout_toStartOf="@+id/information_preview_count_tv"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        tools:text="20180706" />
+
+    <TextView
+        android:id="@+id/information_preview_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/information_cover_cv"
+        android:layout_alignEnd="@+id/information_title_tv"
+        android:layout_alignRight="@+id/information_title_tv"
+        android:layout_gravity="end"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@mipmap/ic_ebook_preview_count"
+        android:drawablePadding="5dp"
+        android:drawableStart="@mipmap/ic_ebook_preview_count"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        tools:text="2000" />
+
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <TextView
+        android:id="@+id/library_number"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="馆名"
+        android:textColor="#888888"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/code_number"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/library_number"
+        android:layout_toRightOf="@+id/library_number"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="条码号"
+        android:textColor="#888888"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/code_number"
+        android:layout_toLeftOf="@+id/book_price"
+        android:layout_toRightOf="@+id/code_number"
+        android:layout_toStartOf="@+id/book_price"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="书名"
+        android:textColor="#888888"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/book_price"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/mTextViewDelete"
+        android:layout_toStartOf="@+id/mTextViewDelete"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="定价"
+        android:textColor="#888888"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mTextViewDelete"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/mRightView"
+        android:layout_toStartOf="@+id/mRightView"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="操作"
+        android:textColor="#888888"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/mRightView"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

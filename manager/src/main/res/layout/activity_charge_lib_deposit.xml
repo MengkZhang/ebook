@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/return_book_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <com.tzpt.cloundlibrary.manager.widget.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/user_info"
+        layout="@layout/view_login_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/pay_cost_money_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_round_stroke_ffffff_cbcbcb"
+        android:hint="收款金额"
+        android:inputType="numberDecimal"
+        android:maxLength="20"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColorHint="#cccccc"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/pay_cost_pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_round_stroke_ffffff_cbcbcb"
+        android:hint="操作员密码"
+        android:imeOptions="actionGo"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColorHint="#cccccc"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/pay_cost_confirm_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_round_8a633d"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="确认收现金"
+        android:textColor="@drawable/bg_confirm_btn_txt_color"
+        android:textSize="18sp" />
+</LinearLayout>

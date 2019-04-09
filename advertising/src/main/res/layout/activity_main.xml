@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tzpt.cloudlibrary.ad.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/web_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/back"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:scaleType="center"
+        android:src="@mipmap/ic_back_nor" />
+
+    <ImageButton
+        android:id="@+id/forward"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/back"
+        android:layout_toRightOf="@+id/back"
+        android:background="#00000000"
+        android:scaleType="center"
+        android:src="@mipmap/ic_forward_nor" />
+
+    <ImageButton
+        android:id="@+id/refresh"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/forward"
+        android:layout_toRightOf="@+id/forward"
+        android:background="#00000000"
+        android:scaleType="center"
+        android:src="@mipmap/ic_refresh_nor" />
+
+    <ImageView
+        android:id="@+id/bg_splash_default_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_splash"
+        android:visibility="visible" />
+</RelativeLayout>

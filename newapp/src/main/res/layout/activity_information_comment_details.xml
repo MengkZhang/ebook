@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.information.InformationCommentDetailsActivity">
+
+    <include
+        android:id="@+id/common_toolbar"
+        layout="@layout/view_common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.tzpt.cloudlibrary.widget.recyclerview.EasyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/comment_publish_default_rl"
+        android:layout_below="@+id/common_toolbar"
+        android:background="@color/color_f4f4f4"
+        app:layout_empty="@layout/common_empty_big_view"
+        app:layout_error="@layout/common_net_error_big_view"
+        app:layout_progress="@layout/common_progress_view"
+        app:scrollbarStyle="insideOverlay" />
+
+    <include
+        android:id="@+id/comment_publish_default_rl"
+        layout="@layout/view_comment_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/comment_publish_ll"
+        layout="@layout/view_comment_publish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar"
+        android:visibility="gone" />
+
+</RelativeLayout>

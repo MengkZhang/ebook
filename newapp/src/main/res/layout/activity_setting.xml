@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/first_menu_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_toolbar"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/download_set_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_setting_download"
+            app:menu_name="下载设置" />
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/modify_pwd_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_setting_modify_pwd"
+            app:menu_name="修改密码" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_menu_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_menu_ll"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/check_version_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_setting_check_version"
+            app:menu_name="检查更新" />
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/about_us_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_setting_about_us"
+            app:menu_name="关于我们" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_menu_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_menu_ll"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/login_out_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:menu_icon="@mipmap/ic_setting_login_out"
+            app:menu_name="退出登录" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.tzpt.cloudlibrary.widget.LoadingProgressView
+        android:id="@+id/check_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar" />
+</RelativeLayout>

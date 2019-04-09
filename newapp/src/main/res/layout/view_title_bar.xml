@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/titlebar_left_txt_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="47.5dp"
+        android:background="@null"
+        android:minWidth="47.5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/color_8a633d"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/titlebar_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="47.5dp"
+        android:background="@null"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <TextView
+        android:id="@+id/titlebar_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp"
+        android:gravity="center"
+        android:paddingLeft="47.5dp"
+        android:paddingRight="47.5dp"
+        android:singleLine="true"
+        android:textColor="@color/color_8a633d"
+        android:textSize="19sp" />
+
+    <ImageButton
+        android:id="@+id/titlebar_right_btn"
+        android:layout_width="47.5dp"
+        android:layout_height="47.5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <Button
+        android:id="@+id/titlebar_right_txt_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="47.5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:minWidth="47.5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/color_8a633d"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/titlebar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_dcdcdc" />
+</RelativeLayout>

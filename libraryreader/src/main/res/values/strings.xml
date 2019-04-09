@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CloudLibraryReader</string>
+    <string name="text_menu">目录</string>
+    <string name="a">A+</string>
+    <string name="a1">A-</string>
+    <string name="aa">Aa</string>
+    <string name="paginating">正在分页...</string>
+
+    <string name="text_delete">删除</string>
+    <string name="find0">发现0条数据！</string>
+    <string name="text_confirm">确定</string>
+    <string name="delete_book_mark">删除该书签</string>
+    <string name="jump_to_book_mark">跳转</string>
+    <string name="no_book_mark">暂无书签</string>
+    <string name="no_menu">暂无目录</string>
+    <string name="no_this_book">暂无此书资料!</string>
+    <string name="join_to_electronic_shelf">已加入电子书架!</string>
+</resources>

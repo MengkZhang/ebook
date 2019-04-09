@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/belong_library_root_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/belong_library_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_ebebeb">
+
+        <TextView
+            android:id="@+id/belong_library_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_library_title"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="@string/stay_library"
+            android:textColor="@color/color_666666"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@mipmap/ic_arrow_bottom" />
+    </RelativeLayout>
+
+    <com.tzpt.cloudlibrary.widget.recyclerview.EasyRecyclerView
+        android:id="@+id/belong_library_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="332.5dp"
+        android:background="@color/color_ebebeb"
+        app:scrollbarStyle="insideOverlay" />
+
+</LinearLayout>

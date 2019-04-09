@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloundlibrary.manager.ui.activity.RefundPlatformDepositActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <TextView
+        android:id="@+id/pay_can_use_deposit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#694a2c"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="可退押金 0.00"
+        android:textColor="#ffe3ca"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/refund_deposit_money_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_round_stroke_ffffff_cbcbcb"
+        android:hint="提现金额"
+        android:inputType="numberDecimal"
+        android:maxLength="30"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#cccccc"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/refund_deposit_pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_round_stroke_ffffff_cbcbcb"
+        android:hint="账户密码"
+        android:imeOptions="actionGo"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#cccccc"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/refund_deposit_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_btn_round_8a633d"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/refund_deposit_change_account_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="设置退款账户"
+        android:textColor="@color/color_694a2c"
+        android:textSize="15sp" />
+
+</LinearLayout>

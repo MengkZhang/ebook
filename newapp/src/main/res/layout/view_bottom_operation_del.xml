@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/collection_editor_ll"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49.5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/collection_all_check_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_item_common"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#efeff4" />
+
+        <TextView
+            android:id="@+id/collection_del_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_item_common"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ee7853"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>

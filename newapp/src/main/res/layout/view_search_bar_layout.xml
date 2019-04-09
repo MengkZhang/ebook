@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/search_bar_center_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_search_d3cfc9"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <com.tzpt.cloudlibrary.widget.searchview.DefaultTextView
+            android:id="@+id/search_bar_center_default_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/ic_recommend_book_search"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/ic_recommend_book_search"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:hint="搜图书馆"
+            android:textColorHint="#8e8e93"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/search_bar_right_cancel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="取消"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+</LinearLayout>

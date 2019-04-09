@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.interaction.MyMessageActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.tzpt.cloudlibrary.widget.tablayout.RecyclerTabLayout
+        android:id="@+id/recycler_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/common_toolbar"
+        android:background="@color/color_ffffff"
+        app:tabIndicatorColor="@color/color_8a623d"
+        app:tabMaxWidth="300dp"
+        app:tabMinWidth="180dp"
+        app:tabIndicatorPadding="16dp"
+        app:tabSelectedTextColor="@color/color_8a623d" />
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/recycler_tab_layout"
+        android:background="@color/color_f4f4f4" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider_view"
+        android:background="@color/color_ffffff"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>

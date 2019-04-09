@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloundlibrary.manager.ui.activity.LibraryDepositActivity">
+
+    <include layout="@layout/view_title_text_bar" />
+
+    <TextView
+        android:id="@+id/library_deposit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:visibility="gone"
+        tools:text="可用押金0.00元" />
+
+    <Button
+        android:id="@+id/library_pay_deposit_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_btn_round_8a633d"
+        android:gravity="center"
+        android:text="充值"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/library_refund_deposit_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_btn_round_8a633d"
+        android:gravity="center"
+        android:text="提现"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</LinearLayout>

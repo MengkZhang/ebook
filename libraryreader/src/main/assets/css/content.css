@@ -1,0 +1,41 @@
+body.night-mode {
+	background: #000!important;
+	color: #ddd!important
+}
+
+body.day-mode {
+	color: #181619!important
+}
+span.highlight {
+	color: #000!important;
+	background: #ffff98!important
+}
+
+span.search {
+	color: #000!important;
+	background: #00ff98!important
+}
+
+*.highlightYellow {
+	background-color: yellow
+}
+
+*.greenSelection {
+	background-color: limegreen
+}
+p,div {
+    text-indent:2em;
+    text-align:justify !important;
+    text-justify:inter-ideograph !important;
+    font-size:1em !important;
+}
+
+img,image,svg {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    }
+@font-face {
+	font-family:'custom_font';src:url('file:///android_asset/fonts/fangzhenglanting.ttf')
+}
+

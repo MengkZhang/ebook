@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextureView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tzpt.cloundlibrary.manager.widget.camera.IDCardScanBoxView
+        android:id="@+id/scanner_box_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</merge>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/bg_item_common">
+
+    <ImageView
+        android:id="@+id/account_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16.5dp"
+        android:layout_marginStart="16.5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_account_icon3" />
+
+    <ImageView
+        android:id="@+id/account_item_red_iv"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignEnd="@+id/account_item_img"
+        android:layout_alignRight="@+id/account_item_img"
+        android:layout_alignTop="@+id/account_item_img"
+        android:layout_marginTop="-2dp"
+        android:contentDescription="@null"
+        android:src="@drawable/point_red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/account_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14.5dp"
+        android:layout_marginStart="14.5dp"
+        android:layout_toEndOf="@+id/account_item_img"
+        android:layout_toRightOf="@+id/account_item_img"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp"
+        tools:text="名称" />
+
+    <TextView
+        android:id="@+id/account_item_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/account_item_name_tv"
+        android:layout_toRightOf="@+id/account_item_name_tv"
+        android:gravity="center_vertical"
+        android:text="10"
+        android:textColor="#FB7056"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/account_item_overdue_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_toEndOf="@+id/account_item_number_tv"
+        android:layout_toRightOf="@+id/account_item_number_tv"
+        android:gravity="center_vertical"
+        android:text="已逾期 1"
+        android:textColor="#FB7056"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/account_item_arrow_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_more" />
+</RelativeLayout>

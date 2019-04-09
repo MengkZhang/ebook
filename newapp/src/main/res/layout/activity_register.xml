@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.RegisterActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f4f4f4"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/view_register_verify_code" />
+
+            <include layout="@layout/view_register_idcard_info" />
+
+            <include layout="@layout/view_register_psw_info" />
+
+            <include layout="@layout/view_register_to_login" />
+
+            <Button
+                android:id="@+id/register_next_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/phone_manage_button_bg"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.tzpt.cloudlibrary.widget.LoadingProgressView
+            android:id="@+id/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

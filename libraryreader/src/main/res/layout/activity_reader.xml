@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.tzpt.cloudlibrary.app.ebook.CloudLibraryReaderActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <include layout="@layout/include_webreader_layout" />
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <RadioGroup
+                android:id="@+id/mRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="#F5E6DE"
+                android:checkedButton="@+id/ebook_menu"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ebook_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableTop="@drawable/btn_choose_ebook_bg"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/margin_20dp" />
+
+                <RadioButton
+                    android:id="@+id/ebook_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableTop="@drawable/btn_choose_ebook_mark_bg"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/margin_20dp" />
+            </RadioGroup>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginTop="52dp"
+                android:background="#fff"
+                android:scrollbars="none" />
+        </FrameLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

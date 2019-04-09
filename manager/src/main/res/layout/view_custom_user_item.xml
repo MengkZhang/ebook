@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/item_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#EFEFEF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_ffffff">
+
+        <ImageView
+            android:id="@+id/account_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_user_deposit" />
+
+
+        <TextView
+            android:id="@+id/account_item_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/account_item_img"
+            android:layout_toRightOf="@+id/account_item_img"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            tools:text="名称" />
+
+        <TextView
+            android:id="@+id/account_item_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/account_item_name_tv"
+            android:layout_toRightOf="@+id/account_item_name_tv"
+            android:background="@drawable/bg_oval_ff0000"
+            android:clickable="false"
+            android:gravity="center"
+            android:minWidth="18dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="1" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tzpt.cloudlibrary.widget.CustomWebView
+        android:id="@+id/custom_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/read_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="阅读 6613"
+            android:textColor="@color/color_999999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/praise_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/read_count_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/read_count_tv"
+            android:layout_toRightOf="@+id/read_count_tv"
+            android:drawableLeft="@mipmap/ic_discuss_list_praise_done"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/ic_discuss_list_praise_done"
+            android:text="26"
+            android:textColor="@color/color_999999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/custom_discuss_previous_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/read_count_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="上一篇"
+            android:textColor="@color/txt_info_detail_next_pre"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/custom_discuss_next_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/read_count_tv"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="下一篇"
+            android:textColor="@color/txt_info_detail_next_pre"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

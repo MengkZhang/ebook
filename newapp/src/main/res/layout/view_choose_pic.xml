@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_pic_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choose_pic_cancel_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/choose_pic_camera_tv"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:clickable="true"
+            android:background="@drawable/bg_border_top_cccccc"
+            android:drawableEnd="@mipmap/ic_take_pic"
+            android:drawableRight="@mipmap/ic_take_pic"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="拍照"
+            android:textColor="#007aff"
+            android:textSize="19sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadade" />
+
+        <TextView
+            android:id="@+id/choose_pic_galley_tv"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:clickable="true"
+            android:background="@drawable/bg_border_bottom_cccccc"
+            android:drawableEnd="@mipmap/ic_photo_pic"
+            android:drawableRight="@mipmap/ic_photo_pic"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="从相册选择"
+            android:textColor="#007aff"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/choose_pic_cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_border_cccccc"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#007aff"
+        android:textSize="19sp" />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.readers.ActionDetailsActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.tzpt.cloudlibrary.widget.pullrefreshlayout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/to_sign_up_tv"
+        android:layout_below="@+id/common_toolbar"
+        app:srlDisableContentWhenLoading="true"
+        app:srlDisableContentWhenRefresh="true"
+        app:srlEnableAutoLoadMore="false"
+        app:srlEnableOverScrollBounce="false"
+        app:srlPrimaryColor="@color/color_444444">
+
+        <com.tzpt.cloudlibrary.widget.pullrefreshlayout.header.ActivityHeader
+            android:id="@+id/activity_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="@color/color_999999"
+            app:srlDrawableArrow="@mipmap/ic_information_arrow_down"
+            app:srlPrimaryColor="@color/color_ffffff" />
+
+        <com.tzpt.cloudlibrary.widget.CustomWebView
+            android:id="@+id/custom_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.tzpt.cloudlibrary.widget.pullrefreshlayout.footer.ActivityFooter
+            android:id="@+id/activity_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlDrawableArrow="@mipmap/ic_information_arrow_up" />
+
+    </com.tzpt.cloudlibrary.widget.pullrefreshlayout.SmartRefreshLayout>
+
+    <Button
+        android:id="@+id/to_sign_up_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn_action_detail"
+        android:gravity="center"
+        android:text="我要报名"
+        android:textColor="#9e724d"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.tzpt.cloudlibrary.widget.multistatelayout.MultiStateLayout
+        android:id="@+id/multi_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar"
+        app:layout_empty_view="@layout/common_empty_big_view"
+        app:layout_error_view="@layout/common_net_error_big_view"
+        app:layout_progress_view="@layout/common_progress_view" />
+</RelativeLayout>

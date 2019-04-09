@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.share.ShareAppActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/share_logo_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/ic_zxing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/app_name"
+                android:textColor="@color/color_333333"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/share_app_version_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/new_last_version"
+                android:textColor="#969696"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/share_app_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_item_border"
+                android:drawableLeft="@mipmap/ic_btn_share"
+                android:drawablePadding="12dp"
+                android:drawableStart="@mipmap/ic_btn_share"
+                android:paddingEnd="50dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingStart="50dp"
+                android:text="分享"
+                android:textColor="@color/color_444444"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

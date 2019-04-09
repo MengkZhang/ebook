@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_translate"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#44000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/jump_mark_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:paddingEnd="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:paddingStart="20dp"
+            android:text="跳转"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/color_cccccc"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/del_mark_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_ffffff"
+            android:gravity="center_vertical"
+            android:paddingEnd="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:paddingStart="20dp"
+            android:text="删除该书签"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

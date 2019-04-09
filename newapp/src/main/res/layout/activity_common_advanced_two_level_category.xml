@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <com.tzpt.cloudlibrary.widget.multistatelayout.MultiStateLayout
+        android:id="@+id/multi_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_empty_view="@layout/common_empty_big_view"
+        app:layout_error_view="@layout/common_net_error_big_view"
+        app:layout_progress_view="@layout/common_progress_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/classify_rv"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_f4f4f4" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/classify_sub_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

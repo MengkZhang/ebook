@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@mipmap/ic_video_vioce_sb" />
+    <item android:id="@android:id/secondaryProgress">
+        <selector>
+            <item android:state_enabled="false">
+                <color android:color="@android:color/transparent" />
+            </item>
+            <item android:drawable="@mipmap/ic_progress_rect" />
+        </selector>
+    </item>
+    <item android:id="@android:id/progress">
+        <selector>
+            <item android:state_enabled="false">
+                <color android:color="@android:color/transparent" />
+            </item>
+            <item android:drawable="@mipmap/ic_progress_rect" />
+        </selector>
+    </item>
+</layer-list>

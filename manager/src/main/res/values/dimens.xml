@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="space_margin">3dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+</resources>

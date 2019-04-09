@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/forget_id_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="26dp"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/text_title_forlending"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="身份证" />
+
+        <EditText
+            android:id="@+id/forget_psw_et"
+            style="@style/text_title_forlending"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:digits="@string/digits_txt"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:textColorHint="#989898"
+            android:textCursorDrawable="@null"
+            tools:text="13111234083" />
+
+        <ImageView
+            android:id="@+id/forget_clear_box"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="-35dp"
+            android:layout_marginStart="-35dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_delete_text"
+            android:textColor="@color/color_444444"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_f4f4f4" />
+
+    <TextView
+        android:id="@+id/forget_send_msg_tv"
+        style="@style/text_title_forlending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_ffffff"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:text="已发送验证码到您绑定的手机137***5789！"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/forget_send_error_tv"
+        style="@style/text_title_forlending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="20dp"
+        android:text="您的证件未绑定手机号，请持证到就近云图书馆办理！"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/input_verify_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/forget_send_code_et"
+            style="@style/text_title_forlending"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="输入验证码"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColorHighlight="#999999"
+            android:textColorHint="#989898"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/forget_send_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/item_verifycode_selector"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="8dp"
+            android:text="点击发送"
+            android:textColor="#7E6043"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

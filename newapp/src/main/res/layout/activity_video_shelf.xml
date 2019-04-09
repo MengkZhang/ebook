@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.video.VideoShelfActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/video_set_downloading_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:text="下载中"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/video_set_downloading_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_set_downloading_title_tv"
+            android:background="@drawable/bg_item_common"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/video_set_edit_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:button="@drawable/bg_pay_check"
+                android:enabled="false"
+                android:clickable="false"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/video_set_cover_rl"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/video_set_edit_cb"
+                android:layout_toRightOf="@+id/video_set_edit_cb">
+
+                <ImageView
+                    android:id="@+id/video_set_cover_two_iv"
+                    android:layout_width="92dp"
+                    android:layout_height="81dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#40b37b50" />
+
+                <ImageView
+                    android:id="@+id/video_set_cover_one_iv"
+                    android:layout_width="104dp"
+                    android:layout_height="81dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:background="#80b37b50" />
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="81dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/video_set_cover_iv"
+                        android:layout_width="120dp"
+                        android:layout_height="81dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_b37b50" />
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/ic_downloading_count" />
+
+                    <TextView
+                        android:id="@+id/video_downloading_count_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_downloading" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_toEndOf="@+id/video_set_cover_rl"
+                android:layout_toRightOf="@+id/video_set_cover_rl">
+
+                <TextView
+                    android:id="@+id/video_cache_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2dp"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp"
+                    tools:text="英语中考第二轮复习英语中考第二轮复习英语中考第二轮复习英语中考第二轮复习英语中考第二轮复习" />
+
+                <ProgressBar
+                    android:id="@+id/video_cache_pb"
+                    style="@style/dl_progress_bar_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/video_cache_name_tv"
+                    android:layout_alignLeft="@+id/video_cache_name_tv"
+                    android:layout_alignRight="@+id/video_cache_name_tv"
+                    android:layout_alignStart="@+id/video_cache_name_tv"
+                    android:layout_below="@+id/video_cache_name_tv"
+                    android:layout_marginTop="14dp"
+                    android:max="100"
+                    android:progress="40"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/video_cache_speed_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/video_cache_name_tv"
+                    android:layout_alignStart="@+id/video_cache_name_tv"
+                    android:layout_below="@+id/video_cache_pb"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_333333"
+                    android:textSize="13sp"
+                    android:visibility="visible"
+                    tools:text="82.6KB/s" />
+
+                <TextView
+                    android:id="@+id/video_cache_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/video_cache_name_tv"
+                    android:layout_alignStart="@+id/video_cache_name_tv"
+                    android:layout_below="@+id/video_cache_pb"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_ee7853"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:text="暂停" />
+
+                <TextView
+                    android:id="@+id/video_cache_load_total_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/video_cache_name_tv"
+                    android:layout_alignRight="@+id/video_cache_name_tv"
+                    android:layout_below="@+id/video_cache_pb"
+                    android:layout_marginTop="8dp"
+                    android:gravity="end"
+                    android:textColor="@color/color_333333"
+                    android:textSize="13sp"
+                    android:visibility="visible"
+                    tools:text="28.8M/40M" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/video_set_complete_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_set_downloading_rl"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="已下载"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <com.tzpt.cloudlibrary.widget.recyclerview.EasyRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/video_set_complete_title_tv"
+            android:overScrollMode="never"
+            app:layout_empty="@layout/common_empty_big_view"
+            app:layout_error="@layout/common_net_error_big_view"
+            app:layout_progress="@layout/common_progress_view"
+            app:scrollbarStyle="insideOverlay" />
+
+        <com.tzpt.cloudlibrary.widget.multistatelayout.MultiStateLayout
+            android:id="@+id/multi_state_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_empty_view="@layout/common_empty_big_view"
+            app:layout_error_view="@layout/common_net_error_big_view"
+            app:layout_progress_view="@layout/common_progress_view" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_f4f4f4" />
+
+    <LinearLayout
+        android:id="@+id/operate_video_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/choose_video_all_tv"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_item_common"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_f4f4f4" />
+
+        <TextView
+            android:id="@+id/del_video_tv"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_item_common"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/color_80ee7853"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/memory_space_tip_tv"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:background="@color/color_eeeeee"
+        android:gravity="center"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp"
+        tools:text="已下载 346M，可用空间 2.5G" />
+</LinearLayout>

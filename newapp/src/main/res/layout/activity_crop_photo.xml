@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <com.tzpt.cloudlibrary.widget.TouchImageView
+        android:id="@+id/crop_photo_tiv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tzpt.cloudlibrary.widget.PicCropViewFinder
+        android:id="@+id/crop_photo_pcvf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="62.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#141414"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/crop_photo_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/crop_photo_done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="完成"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

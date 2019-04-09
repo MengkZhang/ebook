@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_common">
+
+    <TextView
+        android:id="@+id/reader_notes_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        tools:text="这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介这里是内容简介。" />
+
+    <TextView
+        android:id="@+id/reader_notes_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reader_notes_content_tv"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/reader_notes_del_tv"
+        android:layout_toStartOf="@+id/reader_notes_del_tv"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        tools:text="20180808 09:00" />
+
+    <TextView
+        android:id="@+id/reader_notes_del_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/reader_notes_content_tv"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:text="删除"
+        android:textColor="#359aff"
+        android:textSize="12sp"
+        tools:text="删除" />
+
+    <View
+        android:id="@+id/reader_notes_divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/reader_notes_date_tv"
+        android:layout_marginTop="10dp"
+        android:background="#ececec" />
+</RelativeLayout>

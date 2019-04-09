@@ -1,0 +1,1 @@
+make: `D:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/libNativeFormats-v4.so' is up to date.

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.deposit.UserLostBookActivity">
+
+    <include
+        android:id="@+id/common_toolbar"
+        layout="@layout/view_common_title_bar" />
+
+    <include
+        android:id="@+id/view_user_deposit_header"
+        layout="@layout/view_user_deposit_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_below="@+id/common_toolbar" />
+
+    <include
+        android:id="@+id/lost_top_title_layout_ll"
+        layout="@layout/view_borrow_books_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view_user_deposit_header"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lost_top_title_layout_ll"
+        android:background="@color/color_f4f4f4"
+        android:visibility="gone"/>
+
+
+    <com.tzpt.cloudlibrary.widget.recyclerview.EasyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lost_book_total_layout"
+        android:layout_below="@+id/item_line"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_empty="@layout/common_rv_empty_view"
+        app:layout_error="@layout/common_net_error_view"
+        app:layout_progress="@layout/common_progress_view" />
+
+    <RelativeLayout
+        android:id="@+id/lost_book_total_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/lost_book_bottom_rl"
+        android:background="#EFEFEF"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lost_book_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:text="赔偿合计"
+            android:textColor="#ff2400"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lost_book_sum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lost_book_total_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/lost_book_total_tv"
+            android:layout_toRightOf="@+id/lost_book_total_tv"
+            android:text="数量 0"
+            android:textColor="#ff2400"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lost_book_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/lost_book_sum_tv"
+            android:layout_toRightOf="@+id/lost_book_sum_tv"
+            android:text="金额 0.00"
+            android:textColor="#ff2400"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lost_book_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ffffff"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/lost_book_money_et"
+            android:textSize = "16sp"
+            android:textColor="@color/color_999999"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_round_dddddd"
+            android:enabled="false"
+            android:hint="金额"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" />
+
+        <EditText
+            android:id="@+id/lost_book_psw_et"
+            style="@style/book_detail_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/lost_book_money_et"
+            android:layout_alignStart="@+id/lost_book_money_et"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_round_dddddd"
+            android:hint="账户密码"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" />
+
+        <TextView
+            android:id="@+id/pay_deposit_no_deposit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/pay_deposit_confirm_btn"
+            android:background="#fff"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="押金不足，请先充值押金！"
+            android:textColor="#ff2400"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/pay_deposit_confirm_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/lost_book_psw_et"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_login"
+            android:text="确认扣押金"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>

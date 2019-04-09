@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:divider="@drawable/bg_divider_normal"
+        android:dividerPadding="0.5dp"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/bottom_take_pic_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_item_common"
+            android:gravity="center"
+            android:text="@string/take_picture"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bottom_choose_pic_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_item_common"
+            android:gravity="center"
+            android:text="@string/choose_picture"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bottom_system_pic_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_item_common"
+            android:gravity="center"
+            android:text="@string/system_picture"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_ebebeb" />
+
+    <TextView
+        android:id="@+id/bottom_cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_item_common"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ScanBoxView">
+        <!-- 扫描框距离顶部的距离，默认值为135dp -->
+        <attr name="sbv_topOffset" format="dimension|reference" />
+        <!-- 扫描框边角线的宽度，默认值为4dp -->
+        <attr name="sbv_cornerSize" format="dimension|reference" />
+        <!-- 扫描框边角线的长度，默认值为20dp -->
+        <attr name="sbv_cornerLength" format="dimension|reference" />
+        <!-- 扫描框边角线的颜色，默认值为#fe8108 -->
+        <attr name="sbv_cornerColor" format="color|reference" />
+        <!-- 扫描框的宽度，默认值为240dp -->
+        <attr name="sbv_rectWidth" format="dimension|reference" />
+        <!-- 扫描框的高度，默认值为240dp -->
+        <attr name="sbv_rectHeight" format="dimension|reference" />
+        <!-- 除去扫描框，其余部分阴影颜色，默认值为#7F000000 -->
+        <attr name="sbv_maskColor" format="color|reference" />
+        <!-- 扫描线的宽度，默认值为4dp -->
+        <attr name="sbv_scanLineSize" format="dimension|reference" />
+        <!-- 扫描线的颜色，默认值为@android:color/white -->
+        <attr name="sbv_scanLineColor" format="color|reference" />
+        <!-- 扫描线的图片资源，默认值为null -->
+        <attr name="sbv_customScanLineDrawable" format="reference" />
+        <!-- 扫描线从顶部移动到底部的动画时间，默认值为500 -->
+        <attr name="sbv_animTime" format="integer" />
+    </declare-styleable>
+</resources>

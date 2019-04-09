@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cb="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mWebReaderParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tzpt.cloudlibrary.app.ebook.books.view.WebReader
+        android:id="@+id/mWebReader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:id="@+id/top_infoview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="2.0"
+            android:ellipsize="end"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/authorName"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_infoview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chapterName"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/pageIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:gravity="end|center"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <com.tzpt.cloudlibrary.app.ebook.books.widget.CBProgressBar
+        android:id="@+id/mCBProgressBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        cb:orientation="sector"
+        cb:percent_text_color="#3CB371"
+        cb:percent_text_size="22sp"
+        cb:sectorColor="#aaffffff" />
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <include layout="@layout/include_toobar_layout" />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/monday_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_ch_box_ffffff"
+            android:button="@null"
+            android:text="周一"
+            android:textColor="@drawable/bg_txt_ffd7d7d7"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/tuesday_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_ch_box_ffffff"
+            android:button="@null"
+            android:text="周二"
+            android:textColor="@drawable/bg_txt_ffd7d7d7"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/wednesday_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_ch_box_ffffff"
+            android:button="@null"
+            android:text="周三"
+            android:textColor="@drawable/bg_txt_ffd7d7d7"
+            android:textSize="16sp" />
+
+
+        <CheckBox
+            android:id="@+id/thursday_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_ch_box_ffffff"
+            android:button="@null"
+            android:text="周四"
+            android:textColor="@drawable/bg_txt_ffd7d7d7"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/friday_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_ch_box_ffffff"
+            android:button="@null"
+            android:text="周五"
+            android:textColor="@drawable/bg_txt_ffd7d7d7"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/saturday_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_ch_box_ffffff"
+            android:button="@null"
+            android:text="周六"
+            android:textColor="@drawable/bg_txt_ffd7d7d7"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/sunday_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_ch_box_ffffff"
+            android:button="@null"
+            android:text="周日"
+            android:textColor="@drawable/bg_txt_ffd7d7d7"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

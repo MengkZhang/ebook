@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextureView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/camera_preview_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_000000"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <com.tzpt.cloudlibrary.widget.camera.FaceView
+        android:id="@+id/face_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:face_view_bottom="123dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/color_000000">
+
+        <Button
+            android:id="@+id/camera_take_pic_btn"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/ic_camera_take" />
+
+        <Button
+            android:id="@+id/camera_take_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:background="@null"
+            android:padding="16dp"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/camera_use_pic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:background="@null"
+            android:padding="16dp"
+            android:text="@string/use_pic"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </FrameLayout>
+</merge>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cb="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/slide_menu_dl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tzpt.cloudlibrary.widget.pageflipview.PageFlipView
+            android:id="@+id/reader_widget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/slide_menu_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginRight="-65dp"
+            android:layout_marginEnd="-65dp"
+            android:background="@color/color_ffffff"
+            android:clickable="true"
+            android:focusable="true">
+
+            <RadioGroup
+                android:id="@+id/slide_menu_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@color/color_ffffff"
+                android:checkedButton="@+id/ebook_toc_rBtn"
+                android:divider="@drawable/divider_cccccc_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <RadioButton
+                    android:id="@+id/ebook_toc_rBtn"
+                    android:layout_width="91dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_btn_read_toc"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="目录"
+                    android:textColor="@color/color_666666"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/ebook_mark_rBtn"
+                    android:layout_width="91dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_btn_read_mark"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="书签"
+                    android:textColor="@color/color_666666"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/toc_mark_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/slide_menu_rg"
+                android:layout_gravity="start"
+                android:layout_marginTop="15dp"
+                android:background="#fff"
+                android:scrollbars="none" />
+
+            <ImageButton
+                android:id="@+id/close_read_menu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@mipmap/ic_btn_ebook_reader_menu_close" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <View
+        android:id="@+id/menu_cover_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_translate" />
+
+    <View
+        android:id="@+id/loading_cover_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff" />
+
+    <com.tzpt.cloudlibrary.widget.CBProgressBar
+        android:id="@+id/download_cbProBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        cb:orientation="sector"
+        cb:percent_text_color="#3CB371"
+        cb:percent_text_size="22sp"
+        cb:sectorColor="#aaffffff" />
+
+
+    <ProgressBar
+        android:id="@+id/parse_proBar"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/top_toolbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_reader_background"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/toolbar_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_left_white" />
+
+        <TextView
+            android:id="@+id/toolbar_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_toEndOf="@+id/toolbar_back_btn"
+            android:layout_toLeftOf="@+id/toolbar_right_btn"
+            android:layout_toRightOf="@+id/toolbar_back_btn"
+            android:layout_toStartOf="@+id/toolbar_right_btn"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/toolbar_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:minWidth="50dp"
+            android:src="@mipmap/ic_share_more" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

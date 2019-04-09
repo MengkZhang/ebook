@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下时的背景图片 -->
+    <item android:drawable="@mipmap/ic_back_pre" android:state_enabled="false" android:state_pressed="true" />
+    <!-- 按下时的背景图片 -->
+    <item android:drawable="@mipmap/ic_back_pre" android:state_checked="true" android:state_enabled="false" />
+    <!-- 默认时的背景图片 -->
+    <item android:drawable="@mipmap/ic_back_nor" />
+</selector>

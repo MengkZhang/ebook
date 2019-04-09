@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloundlibrary.manager.ui.activity.ReaderAuthenticationActivity">
+
+
+    <com.tzpt.cloundlibrary.manager.widget.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar"
+        android:layout_marginBottom="70dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/id_card_number"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/reader_id_card_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    tools:text="510105199205054046" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/reader_name"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/reader_name_et"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    tools:text="朱亚磊" />
+
+                <ImageButton
+                    android:id="@+id/reader_name_edit_btn"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:src="@mipmap/ic_reader_edit"
+                    android:visibility="gone" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/reader_sex"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/reader_sex_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    tools:text="男" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/reader_nationality"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/reader_nationality_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    tools:text="汉族" />
+
+                <ImageButton
+                    android:id="@+id/reader_nationality_edit_btn"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:src="@mipmap/ic_reader_edit"
+                    android:visibility="gone" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/reader_birthday"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/reader_birthday_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    tools:text="1992年5月5日 " />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5" />
+        </TableLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reader_retry_scanning_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_round_8a633d"
+            android:text="@string/retry_scanning"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/reader_skip_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_round_8a633d"
+            android:text="@string/confirm"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/reader_submit_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_round_8a633d"
+            android:text="@string/confirm"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.tzpt.cloundlibrary.manager.widget.MultiStateLayout
+        android:id="@+id/multi_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar"
+        android:background="@color/color_ffffff"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_progress_view="@layout/common_progress_view" />
+</RelativeLayout>

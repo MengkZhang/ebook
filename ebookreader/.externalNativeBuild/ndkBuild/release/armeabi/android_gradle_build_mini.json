@@ -1,0 +1,35 @@
+{
+  "buildFiles": [
+    "D:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Android.mk",
+    "D:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Administrator.ZX-201706160908\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dD:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\android_work\\work_space\\ebookreader\\build\\intermediates\\ndkBuild\\release\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk clean"
+  ],
+  "libraries": {
+    "NativeFormats-v4-release-armeabi": {
+      "artifactName": "NativeFormats-v4",
+      "buildCommand": "C:\\Users\\Administrator.ZX-201706160908\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dD:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\android_work\\work_space\\ebookreader\\build\\intermediates\\ndkBuild\\release\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk D:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/release/obj/local/armeabi/libNativeFormats-v4.so",
+      "abi": "armeabi",
+      "output": "D:\\android_work\\work_space\\ebookreader\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi\\libNativeFormats-v4.so"
+    },
+    "LineBreak-v2-release-armeabi": {
+      "artifactName": "LineBreak-v2",
+      "buildCommand": "C:\\Users\\Administrator.ZX-201706160908\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dD:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\android_work\\work_space\\ebookreader\\build\\intermediates\\ndkBuild\\release\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk D:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/release/obj/local/armeabi/libLineBreak-v2.so",
+      "abi": "armeabi",
+      "output": "D:\\android_work\\work_space\\ebookreader\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi\\libLineBreak-v2.so"
+    },
+    "DeflatingDecompressor-v3-release-armeabi": {
+      "artifactName": "DeflatingDecompressor-v3",
+      "buildCommand": "C:\\Users\\Administrator.ZX-201706160908\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dD:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\android_work\\work_space\\ebookreader\\build\\intermediates\\ndkBuild\\release\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk D:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/release/obj/local/armeabi/libDeflatingDecompressor-v3.so",
+      "abi": "armeabi",
+      "output": "D:\\android_work\\work_space\\ebookreader\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi\\libDeflatingDecompressor-v3.so"
+    },
+    "expat-release-armeabi": {
+      "artifactName": "expat",
+      "buildCommand": "C:\\Users\\Administrator.ZX-201706160908\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\android_work\\work_space\\ebookreader\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dD:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\android_work\\work_space\\ebookreader\\build\\intermediates\\ndkBuild\\release\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk D:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/release/obj/local/armeabi/libexpat.a",
+      "abi": "armeabi",
+      "output": "D:\\android_work\\work_space\\ebookreader\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi\\libexpat.a"
+    }
+  }
+}

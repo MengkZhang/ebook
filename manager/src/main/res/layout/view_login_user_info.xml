@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/library_management_header"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#694a2c"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/reader_name_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ffe3ca"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/borrowable_sum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/reader_name_number_tv"
+        android:layout_toRightOf="@+id/reader_name_number_tv"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#ffe3ca"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/usable_deposit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/borrowable_sum_tv"
+        android:layout_toRightOf="@+id/borrowable_sum_tv"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#ffe3ca"
+        android:textSize="16sp" />
+
+</RelativeLayout>

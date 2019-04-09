@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <com.tzpt.cloundlibrary.manager.widget.camera.ScanWrapper
+        android:id="@+id/borrow_book_scan_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <com.tzpt.cloundlibrary.manager.widget.TitleBarView
+        android:id="@+id/borrow_book_scan_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/user_info"
+        layout="@layout/view_login_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/borrow_book_scan_title" />
+
+    <include
+        android:id="@+id/borrow_book_scan_total_info"
+        layout="@layout/view_borrow_book_scan_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/borrow_book_scan_bottom"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:id="@+id/borrow_book_scan_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/light_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000"
+            android:drawableTop="@mipmap/ic_light"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="手电筒"
+            android:textColor="#cccccc"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/return_list_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000"
+            android:drawableTop="@mipmap/ic_return_list"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="返回列表"
+            android:textColor="#cccccc"
+            android:textSize="10sp" />
+    </LinearLayout>
+</RelativeLayout>

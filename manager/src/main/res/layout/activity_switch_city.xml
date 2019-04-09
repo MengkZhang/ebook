@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_right_text_bar" />
+
+    <RelativeLayout
+        android:id="@+id/switch_city_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#f1e7db">
+
+        <TextView
+            android:id="@+id/switch_city_location"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/ic_map_position"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/ic_map_position"
+            android:gravity="center_vertical"
+            android:text="四川省成都市青羊区西御街天府广场"
+            android:textColor="#805f33"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/switch_city_location"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/switch_city_location"
+            android:layout_toRightOf="@id/switch_city_location"
+            android:gravity="center_vertical"
+            android:text="GPS定位"
+            android:textColor="#d8b998"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/switch_city_location"
+            android:layout_alignStart="@+id/switch_city_location"
+            android:layout_below="@+id/switch_city_location"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="点击选择定位地址!"
+            android:textColor="#959592"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <com.tzpt.cloundlibrary.manager.widget.recyclerview.EasyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_empty="@layout/common_footer_empty_view"
+        app:layout_error="@layout/common_net_error_view"
+        app:layout_progress="@layout/common_progress_view"
+        app:scrollbarStyle="insideOverlay" />
+
+</LinearLayout>

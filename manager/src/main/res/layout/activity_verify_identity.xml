@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/library_num_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_round_ffffff"
+            android:digits="@string/englist_txt"
+            android:gravity="center_vertical"
+            android:hint="@string/library_number"
+            android:inputType="textUri|text"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textColorHint="#cccccc"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_round_ffffff"
+            android:digits="@string/englist_phone"
+            android:gravity="center_vertical"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textColorHint="#cccccc"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:id="@+id/verify_code_ll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_round_ffffff"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/verify_code_et"
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="验证码"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/send_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:contentDescription="@string/app_name"
+                android:padding="12dp"
+                android:autoLink="all"
+                android:text="@string/send_classify_code"
+                android:textColor="#8a633d"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirm_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_btn_round_8a633d"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@drawable/bg_confirm_btn_txt_color"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ZxingLibrary</string>
+    <string name="zxing_button_ok">确定</string>
+    <string name="zxing_msg_camera_framework_bug">抱歉，相机出现问题!</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/account_nest_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ebebeb">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.tzpt.cloudlibrary.widget.usertopbar.UserCommonTopBar
+                    android:id="@+id/user_top_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="@drawable/bg_divider_margin16"
+                    android:dividerPadding="0.5dp"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <com.tzpt.cloudlibrary.widget.CustomAccountItemView
+                        android:id="@+id/item_card_civ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hasItemArrowIcon="true"
+                        app:itemIcon="@mipmap/ic_account_icon12"
+                        app:itemName="名片" />
+
+                    <com.tzpt.cloudlibrary.widget.CustomAccountItemView
+                        android:id="@+id/item_self_help_civ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hasItemArrowIcon="true"
+                        app:itemIcon="@mipmap/ic_account_icon1"
+                        app:itemName="自助" />
+
+                    <com.tzpt.cloudlibrary.widget.CustomAccountItemView
+                        android:id="@+id/item_deposit_civ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hasItemArrowIcon="true"
+                        app:itemIcon="@mipmap/ic_account_icon7"
+                        app:itemName="钱包" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="@drawable/bg_divider_margin16"
+                    android:dividerPadding="0.5dp"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+
+                    <com.tzpt.cloudlibrary.widget.CustomAccountItemView
+                        android:id="@+id/item_subscription_civ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hasItemArrowIcon="true"
+                        app:itemIcon="@mipmap/ic_book_self"
+                        app:itemName="书架" />
+
+                    <com.tzpt.cloudlibrary.widget.CustomAccountItemView
+                        android:id="@+id/item_collection_civ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hasItemArrowIcon="true"
+                        app:itemIcon="@mipmap/ic_account_icon17"
+                        app:itemName="收藏" />
+
+                    <com.tzpt.cloudlibrary.widget.CustomAccountItemView
+                        android:id="@+id/item_interaction_civ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hasItemArrowIcon="true"
+                        app:itemIcon="@mipmap/ic_account_icon15"
+                        app:itemName="互动" />
+
+                </LinearLayout>
+
+
+                <com.tzpt.cloudlibrary.widget.CustomAccountItemView
+                    android:id="@+id/item_setting_civ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:hasItemArrowIcon="true"
+                    app:itemIcon="@mipmap/ic_account_icon16"
+                    app:itemName="设置" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

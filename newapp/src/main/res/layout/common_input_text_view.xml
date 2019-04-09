@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/input_name_tv"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp"
+        tools:text="馆别" />
+
+    <TextView
+        android:id="@+id/input_content_tv"
+        style="@style/book_detail_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableEnd="@mipmap/ic_right_arrow"
+        android:drawableRight="@mipmap/ic_right_arrow"
+        android:gravity="center_vertical"
+        tools:text="13111234083" />
+
+    <EditText
+        android:id="@+id/input_content_et"
+        style="@style/book_detail_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:digits="@string/letter_list"
+        android:inputType="textCapCharacters"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_item_parent_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tab_item_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="逾期消息"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tab_item_msg_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_above="@+id/tab_item_title_tv"
+        android:layout_marginBottom="-10dp"
+        android:layout_toEndOf="@+id/tab_item_title_tv"
+        android:layout_toRightOf="@+id/tab_item_title_tv"
+        android:background="@drawable/bg_oval_ff0000"
+        android:gravity="center"
+        android:minWidth="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="9"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:visibility="gone" />
+</RelativeLayout>

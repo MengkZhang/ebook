@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.activity.UserDepositAgreementActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <com.tzpt.cloundlibrary.manager.widget.MultiStateLayout
+        android:id="@+id/multi_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_empty_view="@layout/common_footer_empty_view"
+        app:layout_error_view="@layout/common_net_error_view"
+        app:layout_progress_view="@layout/common_progress_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tzpt.cloundlibrary.manager.widget.CustomWebView
+            android:id="@+id/custom_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>

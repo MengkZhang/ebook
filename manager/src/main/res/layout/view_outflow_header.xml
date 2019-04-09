@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/color_694a2c"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/flow_header_library_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toLeftOf="@+id/flow_header_user_info_tv"
+        android:layout_toStartOf="@+id/flow_header_user_info_tv"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#ffe3ca"
+        android:textSize="16sp"
+        tools:text="AACF 石塘镇综合文化站" />
+
+    <TextView
+        android:id="@+id/flow_header_user_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#ffe3ca"
+        android:textSize="16sp"
+        tools:text="罗燕 13990144636" />
+</RelativeLayout>

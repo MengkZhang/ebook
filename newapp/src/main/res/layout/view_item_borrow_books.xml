@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/borrow_library_number"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="WWWWW"
+            android:textColor="@color/color_444444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/borrow_code_number"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="000000000000000"
+            android:textColor="@color/color_444444"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/borrow_book_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:maxLines="2"
+            android:text="书名"
+            android:textColor="@color/color_444444"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/borrow_book_price"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="end|center_vertical"
+                android:singleLine="true"
+                android:text="押1000.00"
+                android:textColor="@color/color_444444"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/borrow_book_attach_price"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ellipsize="end"
+                android:gravity="end|center_vertical"
+                android:singleLine="true"
+                android:text="溢1000.00"
+                android:textColor="#ff0000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/borrow_del_img"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingTop="16dp"
+            android:src="@mipmap/ic_book_delete" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/borrow_book_reason"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="#fdf9f6"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="#8a4f1a"
+        android:textSize="15sp"
+        android:visibility="gone"
+        tools:text="押金不足" />
+</LinearLayout>

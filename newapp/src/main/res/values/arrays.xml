@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--复姓列表 -->
+    <string-array name="compound_surnames">
+        <item>欧阳</item>
+        <item>太史</item>
+        <item>端木</item>
+        <item>上官</item>
+        <item>司马</item>
+        <item>东方</item>
+        <item>独孤</item>
+        <item>南宫</item>
+        <item>万俟</item>
+        <item>闻人</item>
+        <item>夏侯</item>
+        <item>诸葛</item>
+        <item>尉迟</item>
+        <item>公羊</item>
+        <item>赫连</item>
+        <item>澹台</item>
+        <item>皇甫</item>
+        <item>宗政</item>
+        <item>濮阳</item>
+        <item>公冶</item>
+        <item>太叔</item>
+        <item>申屠</item>
+        <item>公孙</item>
+        <item>慕容</item>
+        <item>仲孙</item>
+        <item>钟离</item>
+        <item>长孙</item>
+        <item>宇文</item>
+        <item>司徒</item>
+        <item>鲜于</item>
+        <item>司空</item>
+        <item>闾丘</item>
+        <item>子车</item>
+        <item>亓官</item>
+        <item>司寇</item>
+        <item>巫马</item>
+        <item>公西</item>
+        <item>颛孙</item>
+        <item>壤驷</item>
+        <item>公良</item>
+        <item>漆雕</item>
+        <item>乐正</item>
+        <item>宰父</item>
+        <item>谷梁</item>
+        <item>拓跋</item>
+        <item>夹谷</item>
+        <item>轩辕</item>
+        <item>令狐</item>
+        <item>段干</item>
+        <item>百里</item>
+        <item>呼延</item>
+        <item>东郭</item>
+        <item>南门</item>
+        <item>羊舌</item>
+        <item>微生</item>
+        <item>公户</item>
+        <item>公玉</item>
+        <item>公仪</item>
+        <item>梁丘</item>
+        <item>公仲</item>
+        <item>公上</item>
+        <item>公门</item>
+        <item>公山</item>
+        <item>公坚</item>
+        <item>左丘</item>
+        <item>公伯</item>
+        <item>西门</item>
+        <item>公祖</item>
+        <item>第五</item>
+        <item>公乘</item>
+        <item>贯丘</item>
+        <item>公皙</item>
+        <item>南荣</item>
+        <item>东里</item>
+        <item>东宫</item>
+        <item>仲长</item>
+        <item>子书</item>
+        <item>子桑</item>
+        <item>即墨</item>
+        <item>达奚</item>
+        <item>褚师</item>
+        <item>吴铭</item>
+    </string-array>
+    <!--搜索分类列表 -->
+    <string-array name="search_type">
+        <item>图书_0</item>
+        <item>电子书_1</item>
+        <item>图书馆_2</item>
+        <item>资讯_3</item>
+        <item>活动_4</item>
+    </string-array>
+    <string-array name="library_search_type">
+        <item>图书_0</item>
+        <item>电子书_1</item>
+        <item>资讯_3</item>
+    </string-array>
+    <!--图书详情菜单 -->
+    <string-array name="menu_list">
+        <item>图书推荐</item>
+        <item>分享</item>
+    </string-array>
+</resources>

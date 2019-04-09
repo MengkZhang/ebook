@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_16dp">
+
+    <TextView
+        android:id="@+id/item_borrow_book_position_tv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/point_current_lending"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/color_ffffff"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/margin_view"
+        android:layout_width="10dp"
+        android:layout_height="148dp"
+        android:layout_toEndOf="@+id/item_borrow_book_position_tv"
+        android:layout_toRightOf="@+id/item_borrow_book_position_tv"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/item_book_layout"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/margin_view"
+        android:layout_toRightOf="@+id/margin_view">
+
+        <ImageView
+            android:id="@+id/item_book_image"
+            android:layout_width="105dp"
+            android:layout_height="148dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/divider_f4f4f4"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/item_book_image"
+            android:layout_toRightOf="@+id/item_book_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            tools:text="书名" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/item_book_image"
+            android:layout_toRightOf="@+id/item_book_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_book_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="13sp"
+                tools:text="作者" />
+
+            <TextView
+                android:id="@+id/item_book_publishing_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="13sp"
+                tools:text="出版社" />
+
+            <TextView
+                android:id="@+id/item_book_publishing_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="13sp"
+                tools:text="出版年" />
+
+            <TextView
+                android:id="@+id/item_book_isbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="13sp"
+                tools:text="ISBN" />
+
+            <TextView
+                android:id="@+id/item_book_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="13sp"
+                tools:text="类别" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/borrow_book_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/item_book_layout"
+        android:layout_alignStart="@+id/item_book_layout"
+        android:layout_below="@+id/item_book_layout"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:id="@+id/one_key_to_re_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="一键续借"
+            android:textColor="#ee7853"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buy_book_money_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_book_layout"
+        android:layout_alignStart="@+id/item_book_layout"
+        android:layout_below="@+id/borrow_book_layout"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/buy_book_money_tv"
+            style="@style/text_content_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ee7853"
+            android:textSize="13sp"
+            tools:text="金额：5.00" />
+
+        <TextView
+            android:id="@+id/buy_book_fixed_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/buy_book_money_tv"
+            android:layout_toRightOf="@+id/buy_book_money_tv"
+            android:textColor="#ee7853"
+            android:textSize="13sp"
+            tools:text="码洋：5.00" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/borrow_book_overdue_buy_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_book_layout"
+        android:layout_alignStart="@+id/item_book_layout"
+        android:layout_below="@+id/borrow_book_layout"
+        android:layout_marginTop="5dp"
+        android:text="逾期作自动购买处理"
+        android:textColor="#ee7853"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

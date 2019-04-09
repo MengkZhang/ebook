@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_translate_common"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/action_cover_cv"
+        android:layout_width="98dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="5.5dp"
+        android:layout_marginLeft="13.5dp"
+        android:layout_marginStart="13.5dp"
+        android:layout_marginTop="5.5dp"
+        android:background="@mipmap/bg_round_shadow">
+
+        <ImageView
+            android:id="@+id/readers_img"
+            android:layout_width="93dp"
+            android:layout_height="68dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/readers_sign_up_tag_tv"
+            android:layout_width="35dp"
+            android:layout_height="15dp"
+            android:layout_alignEnd="@+id/readers_img"
+            android:layout_alignRight="@+id/readers_img"
+            android:background="@drawable/point_action_red_tag"
+            android:gravity="center"
+            android:text="可报名"
+            android:textColor="@color/color_ffffff"
+            android:textSize="9sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/readers_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/action_cover_cv"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/action_cover_cv"
+        android:layout_toRightOf="@+id/action_cover_cv"
+        android:ellipsize="end"
+        android:gravity="top"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="2"
+        android:minLines="2"
+        android:padding="0dp"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp"
+        tools:text="【识社会·开眼界】图书馆的书..." />
+
+    <TextView
+        android:id="@+id/readers_date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/action_cover_cv"
+        android:layout_alignEnd="@+id/readers_title_tv"
+        android:layout_alignLeft="@+id/readers_title_tv"
+        android:layout_alignRight="@+id/readers_title_tv"
+        android:layout_alignStart="@+id/readers_title_tv"
+        android:layout_toEndOf="@+id/action_cover_cv"
+        android:layout_toRightOf="@+id/action_cover_cv"
+        android:drawableLeft="@mipmap/ic_home_activity_time"
+        android:drawablePadding="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@mipmap/ic_home_activity_time"
+        android:gravity="bottom"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp"
+        tools:text="20180630 14:00" />
+
+</RelativeLayout>

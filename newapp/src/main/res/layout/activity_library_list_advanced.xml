@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.library.LibraryListAdvancedActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f4f4f4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:divider="@drawable/bg_divider_margin16"
+            android:dividerPadding="0.5dp"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <com.tzpt.cloudlibrary.widget.CustomInputTextView
+                android:id="@+id/lib_advanced_type_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:visibility="gone"
+                app:input_name="类别"
+                app:show_text_content="true" />
+
+            <com.tzpt.cloudlibrary.widget.CustomInputTextView
+                android:id="@+id/lib_advanced_city_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                app:input_name="城市"
+                app:show_text_content="true" />
+
+            <com.tzpt.cloudlibrary.widget.CustomInputTextView
+                android:id="@+id/lib_advanced_grade_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                app:input_name="馆别"
+                app:show_text_content="true" />
+
+            <com.tzpt.cloudlibrary.widget.CustomInputTextView
+                android:id="@+id/lib_advanced_code_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                app:input_content_length="5"
+                app:input_name="馆号"
+                app:show_edit_content="true" />
+
+            <com.tzpt.cloudlibrary.widget.CustomInputTextView
+                android:id="@+id/lib_advanced_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                app:input_content_length="20"
+                app:input_name="馆名"
+                app:show_edit_content="true" />
+
+            <Button
+                android:id="@+id/advance_search_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_login"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#694a2c</color>
+    <color name="colorPrimaryDark">#694a2c</color>
+    <color name="colorAccent">#FF9700</color>
+
+    <!-- reader toobar background-->
+    <color name="color_reader_background">#b4000000</color>
+
+    <color name="color_choose_bg_text1">#ff444444</color>
+    <color name="color_choose_bg_text2">#FF1e4a08</color>
+    <color name="color_choose_bg_text3">#FF093934</color>
+    <color name="color_choose_bg_text4">#FF4d0b06</color>
+    <color name="color_choose_bg_text5">#FF454545</color>
+    <color name="color_choose_bg_text6">#FFfae0b8</color>
+    <color name="color_choose_bg_text7">#FFc4e5b1</color>
+    <color name="color_choose_bg_text8">#FFc2ede7</color>
+    <color name="color_choose_bg_text9">#FFecc5c3</color>
+    <color name="color_choose_bg_text10">#FFe5e5e5</color>
+
+    <color name="color_choose_bg1">#FFD6C8A9</color>
+    <color name="color_choose_bg2">#ffc3e4b2</color>
+    <color name="color_choose_bg3">#ffc1ece6</color>
+    <color name="color_choose_bg4">#ffedc5c3</color>
+    <color name="color_choose_bg5">#ffffffff</color>
+    <color name="color_choose_bg6">#ffa3620b</color>
+    <color name="color_choose_bg7">#ff27580d</color>
+    <color name="color_choose_bg8">#ff094139</color>
+    <color name="color_choose_bg9">#ff480d0c</color>
+    <color name="color_choose_bg10">#FF000000</color>
+
+    <color name="home_item_pressed_color">#c8e5e6e7</color>
+    <color name="color_choose_bg_circle">#FE9900</color>
+    <drawable name="delete_default">#9e724d</drawable>
+    <drawable name="delete_pressed">#caa888</drawable>
+    <drawable name="home_color_title">#694a2c</drawable>
+    <drawable name="color_default_image">#EEEEEE</drawable>
+    <color name="prompt_success">#31c27c</color>
+    <color name="prompt_error">#ff0000</color>
+    <color name="prompt_warning">#f0633d</color>
+</resources>

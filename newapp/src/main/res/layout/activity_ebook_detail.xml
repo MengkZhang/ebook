@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.ebook.EBookDetailActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/item_book_image_cv"
+                    android:layout_width="110dp"
+                    android:layout_height="151dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/bg_book_shadow">
+
+                    <ImageView
+                        android:id="@+id/item_book_image"
+                        android:layout_width="105dp"
+                        android:layout_height="145dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/item_book_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/item_book_image_cv"
+                    android:layout_toRightOf="@+id/item_book_image_cv"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="1dp"
+                    android:lineSpacingMultiplier="1.1"
+                    android:maxLines="2"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    tools:text="书名" />
+
+                <TextView
+                    android:id="@+id/item_book_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/item_book_image_cv"
+                    android:layout_alignLeft="@id/item_book_title"
+                    android:layout_alignStart="@id/item_book_title"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="类别" />
+
+
+                <TextView
+                    android:id="@+id/item_book_type_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/item_book_image_cv"
+                    android:layout_toRightOf="@id/item_book_image_cv"
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="类别con" />
+
+                <TextView
+                    android:id="@+id/item_book_isbn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/item_book_type"
+                    android:layout_alignLeft="@id/item_book_title"
+                    android:layout_alignStart="@id/item_book_title"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="isbn" />
+
+                <TextView
+                    android:id="@+id/item_book_isbn_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/item_book_type"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/item_book_image_cv"
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginRight="16dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="isbncon" />
+
+                <TextView
+                    android:id="@+id/item_book_publishing_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/item_book_isbn"
+                    android:layout_alignLeft="@id/item_book_title"
+                    android:layout_alignStart="@id/item_book_title"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="出版年" />
+
+                <TextView
+                    android:id="@+id/item_book_publishing_year_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/item_book_isbn"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/item_book_image_cv"
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginRight="16dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="出版年con" />
+
+                <TextView
+                    android:id="@+id/item_book_publishing_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/item_book_publishing_year"
+                    android:layout_alignLeft="@id/item_book_title"
+                    android:layout_alignStart="@id/item_book_title"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="出版社" />
+                <TextView
+                    android:id="@+id/item_book_publishing_company_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/item_book_publishing_year"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/item_book_image_cv"
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginRight="16dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="出版社con" />
+
+                <TextView
+                    android:id="@+id/item_book_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/item_book_publishing_company"
+                    android:layout_alignLeft="@id/item_book_title"
+                    android:layout_alignStart="@id/item_book_title"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="作者" />
+
+                <TextView
+                    android:id="@+id/item_book_author_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/item_book_publishing_company"
+                    android:ellipsize="end"
+                    android:layout_toRightOf="@id/item_book_image_cv"
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginRight="16dp"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="作者con" />
+
+                <include
+                    android:id="@+id/ebook_share_item_layout"
+                    layout="@layout/common_book_share_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/item_book_image_cv"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/book_detail_center_line_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_below="@+id/ebook_share_item_layout"
+                    android:layout_marginTop="6.5dp"
+                    android:background="#ebebeb" />
+
+                <TextView
+                    android:id="@+id/book_detail_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/book_detail_center_line_v"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:text="内容简介"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/book_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/book_detail_description"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="2dp"
+                    android:lineSpacingMultiplier="1.35"
+                    android:textColor="@color/color_666666"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/lin_start_reading"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_item_common"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_dcdcdc"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableLeft="@mipmap/ic_read_ebook"
+                android:drawablePadding="5dp"
+                android:drawableStart="@mipmap/ic_read_ebook"
+                android:gravity="center"
+                android:text="开始阅读"
+                android:textColor="#945f30"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/book_detail_in_pavilion"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_library_title"
+            android:drawableEnd="@mipmap/ic_arrow_forlibrary"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_arrow_forlibrary"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="所属馆"
+            android:textColor="#945f30"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.tzpt.cloudlibrary.widget.multistatelayout.MultiStateLayout
+        android:id="@+id/multi_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar"
+        android:visibility="gone"
+        app:layout_empty_view="@layout/common_empty_big_view"
+        app:layout_error_view="@layout/common_net_error_big_view"
+        app:layout_progress_view="@layout/common_progress_view" />
+
+</RelativeLayout>

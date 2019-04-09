@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloundlibrary.manager.ui.activity.FlowInfoManagementSelectionActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/flow_selector_parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_round_ffffff">
+
+
+        <TextView
+            android:id="@+id/flow_selector_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:text="日期"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/flow_arrow_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_arrow_down" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/start_content_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_round_ffffff"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/start_content_ev"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="8dp"
+                android:layout_toLeftOf="@+id/date_start_selector_img"
+                android:layout_toStartOf="@+id/date_start_selector_img"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/date_start_selector_img"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingBottom="10dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="5dp"
+                android:paddingStart="1dp"
+                android:paddingTop="10dp"
+                android:src="@mipmap/ic_calendar" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/content_space"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="一" />
+
+
+        <RelativeLayout
+            android:id="@+id/end_content_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_round_ffffff"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/end_content_ev"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="8dp"
+                android:layout_toLeftOf="@+id/date_end_selector_img"
+                android:layout_toStartOf="@+id/date_end_selector_img"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/date_end_selector_img"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingBottom="10dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="5dp"
+                android:paddingStart="1dp"
+                android:paddingTop="10dp"
+                android:src="@mipmap/ic_calendar" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/library_selector_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_round_ffffff"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/library_selector_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:text="请选择"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/arrow_select_down_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_arrow_down" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/search_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_round_8a633d"
+        android:gravity="center"
+        android:text="查询"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/add_new_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_btn_round_8a633d"
+        android:gravity="center"
+        android:text="新增"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

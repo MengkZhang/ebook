@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_head"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <ImageButton
+        android:id="@+id/head_img_search"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:paddingEnd="@dimen/margin_40dp"
+        android:paddingLeft="@dimen/margin_5dp"
+        android:paddingRight="@dimen/margin_40dp"
+        android:paddingStart="@dimen/margin_5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/leftwhite" />
+
+    <Button
+        android:id="@+id/head_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:textSize="16sp"
+        android:paddingEnd="@dimen/margin_40dp"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/margin_5dp"
+        android:paddingRight="@dimen/margin_40dp"
+        android:paddingStart="@dimen/margin_5dp" />
+
+    <TextView
+        android:id="@+id/head_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_40dp"
+        android:layout_marginRight="@dimen/margin_40dp"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/head_txt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="@string/text_confirm"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

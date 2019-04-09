@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_show"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border_ffffff">
+
+    <ImageView
+        android:id="@+id/update_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_update_version" />
+
+    <TextView
+        android:id="@+id/app_update_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="新版本升级"
+        android:textColor="@color/color_000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/app_update_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_update_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="13.5dp"
+        android:background="@null"
+        android:gravity="start"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="更新内容："
+        android:textColor="@color/color_333333"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/app_update_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/app_update_sub_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="@color/color_translate"
+        android:divider="@color/color_translate"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:listSelector="@color/color_translate"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/app_update_content"
+        android:background="@color/color_f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:divider="@drawable/divider_f4f4f4_vertical"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/app_update_cancel_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_left"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/app_update_confirm_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_right"
+            android:gravity="center"
+            android:text="更新"
+            android:textColor="@color/color_8a633d"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

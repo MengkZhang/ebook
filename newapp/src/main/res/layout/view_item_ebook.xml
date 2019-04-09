@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/view_item_root_view_rl"
+    android:background="@drawable/bg_ffffff_item">
+
+    <RelativeLayout
+        android:id="@+id/ebook_item_img_cv"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="5.5dp"
+        android:layout_marginEnd="12.5dp"
+        android:layout_marginLeft="13.5dp"
+        android:layout_marginRight="12.5dp"
+        android:layout_marginStart="13.5dp"
+        android:layout_marginTop="5.5dp"
+        android:background="@mipmap/bg_book_shadow">
+
+        <ImageView
+            android:id="@+id/ebook_item_img"
+            android:layout_width="68dp"
+            android:layout_height="93dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/ebook_item_new_flag_tv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:background="@drawable/ic_new_book_flag_red"
+            android:gravity="center"
+            android:text="新"
+            android:textColor="@color/color_ffffff"
+            android:textSize="9sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/ebook_item_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:button="@drawable/btn_ebook_ck"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/ebook_item_rank_list_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginStart="2.5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ebook_item_rank_list_three_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/ic_ranking_three_head"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/ebook_item_rank_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ebook_item_rank_list_three_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-2dp"
+                android:background="@mipmap/ic_ranking_first"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="1"
+                android:textColor="@color/color_ffffff"
+                android:textSize="10sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ebook_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ebook_item_img_cv"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_toEndOf="@+id/ebook_item_img_cv"
+        android:layout_toRightOf="@+id/ebook_item_img_cv"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp"
+        tools:text="电子书名" />
+
+
+    <TextView
+        android:id="@+id/ebook_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ebook_item_title"
+        android:layout_alignLeft="@+id/ebook_item_title"
+        android:layout_alignRight="@+id/ebook_item_title"
+        android:layout_alignStart="@+id/ebook_item_title"
+        android:layout_below="@+id/ebook_item_title"
+        android:layout_marginTop="11.5dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="2"
+        android:minLines="2"
+        android:padding="0dp"
+        android:textColor="@color/color_666666"
+        android:textSize="13sp"
+        tools:text="电子书内容电子书内容电子书内容电子书内容电子书内容" />
+
+    <TextView
+        android:id="@+id/ebook_item_anthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ebook_item_img_cv"
+        android:layout_alignLeft="@id/ebook_item_title"
+        android:layout_alignStart="@id/ebook_item_title"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/ebook_item_preview_count_tv"
+        android:layout_toStartOf="@+id/ebook_item_preview_count_tv"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp"
+        tools:text="作者" />
+
+    <TextView
+        android:id="@+id/ebook_item_preview_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ebook_item_img_cv"
+        android:layout_alignEnd="@+id/ebook_item_title"
+        android:layout_alignRight="@+id/ebook_item_title"
+        android:layout_marginBottom="2.5dp"
+        android:drawableLeft="@mipmap/ic_ebook_preview_count"
+        android:drawablePadding="5dp"
+        android:drawableStart="@mipmap/ic_ebook_preview_count"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        tools:text="11.5万" />
+
+    <TextView
+        android:id="@+id/ebook_item_no_icon_preview_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ebook_item_img_cv"
+        android:layout_alignEnd="@+id/ebook_item_title"
+        android:layout_alignRight="@+id/ebook_item_title"
+        android:layout_marginBottom="4dp"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:visibility="gone"
+        tools:text="12万" />
+
+
+
+</RelativeLayout>

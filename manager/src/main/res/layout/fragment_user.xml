@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <com.tzpt.cloundlibrary.manager.widget.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title_str="@string/mine" />
+
+    <com.tzpt.cloundlibrary.manager.widget.CustomUserItemView
+        android:id="@+id/user_library_msg_civ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:hasItemLine="false"
+        app:itemIcon="@mipmap/ic_user_msg"
+        app:itemName="消息" />
+
+    <com.tzpt.cloundlibrary.manager.widget.CustomUserItemView
+        android:id="@+id/user_library_help_civ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:hasItemLine="true"
+        app:itemIcon="@mipmap/ic_user_help"
+        app:itemName="帮助" />
+
+    <com.tzpt.cloundlibrary.manager.widget.CustomUserItemView
+        android:id="@+id/user_library_deposit_civ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="gone"
+        app:hasItemLine="true"
+        app:itemIcon="@mipmap/ic_user_deposit"
+        app:itemName="备用金" />
+
+    <com.tzpt.cloundlibrary.manager.widget.CustomUserItemView
+        android:id="@+id/user_library_psw_manage_civ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:hasItemLine="true"
+        app:itemIcon="@mipmap/ic_user_psw"
+        app:itemName="密码" />
+
+    <com.tzpt.cloundlibrary.manager.widget.CustomUserItemView
+        android:id="@+id/user_library_customer_services_civ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:hasItemLine="true"
+        app:itemIcon="@mipmap/ic_user_customer_services"
+        app:itemName="客服" />
+
+    <com.tzpt.cloundlibrary.manager.widget.CustomUserItemView
+        android:id="@+id/user_library_login_out_civ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:hasItemLine="true"
+        app:itemIcon="@mipmap/ic_user_login_out"
+        app:itemName="退出" />
+
+    <TextView
+        android:id="@+id/user_version_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="(最新版本号：v1.0.0)"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+</LinearLayout>

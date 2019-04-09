@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloundlibrary.manager.ui.activity.IntoManagementDetailActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <include layout="@layout/view_outflow_header" />
+
+    <include layout="@layout/view_item_out_flow_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+    <com.tzpt.cloundlibrary.manager.widget.recyclerview.EasyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_empty="@layout/common_footer_empty_view" />
+
+    <include layout="@layout/view_flow_bottom_layout" />
+
+    <Button
+        android:id="@+id/post_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/bg_btn_round_8a633d"
+        android:gravity="center"
+        android:text="发送"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/into_bottom_show_msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:textColor="#ff0000"
+        android:textSize="18sp" />
+</LinearLayout>

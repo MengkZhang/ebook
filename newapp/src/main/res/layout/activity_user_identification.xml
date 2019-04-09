@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.card.UserIdentificationActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <com.tzpt.cloudlibrary.widget.usertopbar.UserCommonTopBar
+        android:id="@+id/user_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_f4f4f4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/account_scanner_bar_code_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="22dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/face_photo_btn"
+            android:layout_below="@+id/account_scanner_bar_code_iv"
+            android:orientation="vertical">
+
+            <com.tzpt.cloudlibrary.widget.SquareImageView
+                android:id="@+id/account_scanner_qc_iv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="22dp"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                app:image_margin="160dp" />
+
+            <TextView
+                android:id="@+id/account_refresh_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:drawableEnd="@mipmap/ic_code_refresh"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/ic_code_refresh"
+                android:text="刷新"
+                android:textColor="#9e724d"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/face_photo_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="25.5dp"
+            android:background="@drawable/btn_login"
+            android:text="@string/face_photo"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+
+        <com.tzpt.cloudlibrary.widget.multistatelayout.MultiStateLayout
+            android:id="@+id/multi_state_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_empty_view="@layout/common_empty_big_view"
+            app:layout_error_view="@layout/common_net_error_big_view"
+            app:layout_progress_view="@layout/common_progress_view" />
+
+        <com.tzpt.cloudlibrary.widget.LoadingProgressView
+            android:id="@+id/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+</LinearLayout>

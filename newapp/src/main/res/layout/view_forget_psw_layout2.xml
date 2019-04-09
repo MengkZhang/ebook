@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forget_new_psw_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/text_title_forlending"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="新密码" />
+
+        <EditText
+            android:id="@+id/forget_new_password"
+            style="@style/text_title_forlending"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColorHint="#989898"
+            android:textCursorDrawable="@null"
+            tools:text="13111234083" />
+
+        <ImageView
+            android:id="@+id/clear_new_password_box"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="-35dp"
+            android:layout_marginStart="-35dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_delete_text"
+            android:textColor="@color/color_444444"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/color_f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/text_title_forlending"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="新密码" />
+
+        <EditText
+            android:id="@+id/forget_new_password2"
+            style="@style/text_title_forlending"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColorHint="#989898"
+            android:textCursorDrawable="@null"
+            tools:text="13111234083" />
+
+        <ImageView
+            android:id="@+id/clear_new_password_box2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="-35dp"
+            android:layout_marginStart="-35dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_delete_text"
+            android:textColor="@color/color_444444"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

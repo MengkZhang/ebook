@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="85dp"
+    android:paddingBottom="11dp"
+    android:paddingTop="11dp">
+
+    <ImageView
+        android:id="@+id/overdue_msg_state_iv"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="4.5dp"
+        android:layout_marginStart="4.5dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@null"
+        android:src="@drawable/point_red"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/overdue_msg_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="4.5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="4.5dp"
+        android:layout_toEndOf="@+id/overdue_msg_state_iv"
+        android:layout_toRightOf="@+id/overdue_msg_state_iv"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/color_010101"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/overdue_msg_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp" />
+</RelativeLayout>

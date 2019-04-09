@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/color_694a2c"
+    android:clipToPadding="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/search_bar_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:minWidth="50dp"
+        android:src="@mipmap/ic_arrow_left" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_search_white_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/search_bar_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:drawableEnd="@mipmap/ic_arrow_down"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_arrow_down"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="青羊区"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/search_bar_center_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入地址"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textColorHint="#989898"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/search_bar_center_del_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginStart="-40dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="6dp"
+            android:src="@mipmap/ic_delete_text"
+            android:textColor="#666666"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_bar_right_confirm_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="10dp"
+        android:paddingStart="1dp"
+        android:paddingTop="10dp"
+        android:text="搜索"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</LinearLayout>

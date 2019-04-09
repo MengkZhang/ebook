@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/color_ffffff"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/user_info_model_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        tools:text="头像" />
+
+    <ImageView
+        android:id="@+id/user_info_head_iv"
+        android:layout_width="41.5dp"
+        android:layout_height="41.5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_toLeftOf="@+id/user_info_arrow_iv"
+        android:layout_toStartOf="@+id/user_info_arrow_iv"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_photo_pressed"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/user_info_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:gravity="center_vertical|end"
+        android:layout_toEndOf="@+id/user_info_model_name_tv"
+        android:layout_toLeftOf="@+id/user_info_arrow_iv"
+        android:layout_toRightOf="@+id/user_info_model_name_tv"
+        android:layout_toStartOf="@+id/user_info_arrow_iv"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:textSize="16sp"
+        tools:text="李小花" />
+
+    <ImageView
+        android:id="@+id/user_info_arrow_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_more" />
+
+</RelativeLayout>

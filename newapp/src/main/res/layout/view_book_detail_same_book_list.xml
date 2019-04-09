@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_book_parent_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/item_book_store_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        tools:text="通用库" />
+
+    <TextView
+        android:id="@+id/item_book_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/item_book_store_room"
+        android:layout_toLeftOf="@+id/item_book_status"
+        android:layout_toRightOf="@+id/item_book_store_room"
+        android:layout_toStartOf="@+id/item_book_status"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        tools:text="B82-13" />
+
+    <TextView
+        android:id="@+id/item_book_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/item_book_need_deposit"
+        android:layout_toStartOf="@+id/item_book_need_deposit"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        tools:text="在馆" />
+
+    <TextView
+        android:id="@+id/item_book_need_deposit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        tools:text="需押金" />
+
+    <TextView
+        android:id="@+id/item_book_order_tv"
+        android:layout_width="42dp"
+        android:layout_height="19dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_c67e3b"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#c67e3b"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:text="预约" />
+
+    <TextView
+        android:id="@+id/item_book_lib_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_book_store_room"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        tools:text="条码号00000000000000" />
+
+    <TextView
+        android:id="@+id/item_book_call_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_book_need_deposit"
+        android:layout_alignStart="@+id/item_book_need_deposit"
+        android:layout_below="@+id/item_book_store_room"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/item_book_lib_number"
+        android:layout_toRightOf="@+id/item_book_lib_number"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        tools:text="索书号 I722722.44/2" />
+
+</RelativeLayout>

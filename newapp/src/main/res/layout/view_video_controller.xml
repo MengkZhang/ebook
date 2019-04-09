@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/controller_video_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/controller_toolbar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/controller_toolbar_status"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/color_half000000" />
+
+        <LinearLayout
+            android:id="@+id/controller_toolbar_sub_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_gradient_64_2_0f"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/controller_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:minWidth="40dp"
+                android:src="@drawable/bg_video_btn_back" />
+
+            <TextView
+                android:id="@+id/controller_title_tv"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                tools:text="标题" />
+
+            <ImageButton
+                android:id="@+id/controller_more_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:src="@drawable/bg_video_btn_share" />
+
+            <View
+                android:id="@+id/controller_top_space_v"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/controller_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_gradient_0_2_64f"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/controller_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@mipmap/ic_video_play" />
+
+        <SeekBar
+            android:id="@+id/controller_progress_sb"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="1000"
+            android:maxHeight="1dp"
+            android:minHeight="1dp"
+            android:progressDrawable="@drawable/ic_video_sb_drawable"
+            android:scrollbars="horizontal"
+            android:thumb="@mipmap/ic_video_sk_btn" />
+
+        <TextView
+            android:id="@+id/controller_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="4dip"
+            android:paddingStart="4dip"
+            android:textColor="#ccffffff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="00:00/00:00" />
+
+        <ImageButton
+            android:id="@+id/controller_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:src="@mipmap/bg_video_btn_change_2_big" />
+
+        <View
+            android:id="@+id/controller_bottom_space_v"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/controller_center_layout_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/controller_center_lock_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="16dp"
+            android:src="@mipmap/ic_video_unlock"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/controller_center_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:text="00：00" />
+
+        <include
+            android:id="@+id/ic_video_net_error_ll"
+            layout="@layout/view_video_controller_net_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/controller_center_play_big_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_video_play_big"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/controller_center_progress_ll"
+            layout="@layout/view_video_controller_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <com.tzpt.cloudlibrary.widget.video.CLVideoFucController
+            android:id="@+id/ic_video_voice_cl_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <com.tzpt.cloudlibrary.widget.video.CLVideoFucController
+            android:id="@+id/ic_video_light_cl_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/video_del_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_video_del_icon"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/video_download_tips_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_gradient_64_2_0f"
+        android:gravity="center"
+        android:text="@string/playing_download_video"
+        android:textColor="#ccffffff"
+        android:textSize="13sp"
+        android:visibility="gone" />
+</RelativeLayout>

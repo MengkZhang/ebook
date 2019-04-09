@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/select_toc_iv"-->
+        <!--android:layout_width="8dp"-->
+        <!--android:layout_height="8dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:background="@drawable/ic_circle_select_chapter"-->
+        <!--android:contentDescription="@string/app_name"-->
+        <!--android:visibility="invisible" />-->
+
+    <TextView
+        android:id="@+id/toc_tree_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/color_333333"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/toc_list_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/bg_e6e7e6"/>
+</LinearLayout>

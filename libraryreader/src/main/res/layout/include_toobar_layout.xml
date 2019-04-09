@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bookreader_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_reader_background"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/toolbar_top_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_left_arrow" />
+
+        <TextView
+            android:id="@+id/toolbar_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@+id/toolbar_top_back"
+            android:layout_toEndOf="@+id/toolbar_top_back"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_toolbar"
+        android:layout_below="@+id/top_toolbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/color_reader_background"
+        android:clickable="true"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/mTextPageNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="@dimen/txt_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bottom_toolbar_read_progress_decrease"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/margin_20dp"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/margin_20dp"
+                android:src="@mipmap/ic_left_arrow" />
+
+            <ProgressBar
+                android:id="@+id/bottom_toolbar_read_progress_paginating"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                android:indeterminate="false"
+                android:max="100"
+                android:scrollbars="horizontal" />
+
+            <SeekBar
+                android:id="@+id/bottom_toolbar_read_progress_seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:indeterminate="false"
+                android:max="100"
+                android:scrollbars="horizontal"
+                android:thumb="@mipmap/ic_jd"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/bottom_toolbar_read_progress_plus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="@dimen/margin_20dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="@dimen/margin_20dp"
+                android:paddingStart="0dp"
+                android:src="@mipmap/ic_rightjt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bookBtn_menu"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:src="@mipmap/ic_ml" />
+
+
+            <ImageButton
+                android:id="@+id/bookBtn_mark"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:src="@mipmap/ic_sq" />
+
+            <ImageButton
+                android:id="@+id/bookBtn_size"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:src="@mipmap/ic_text_font" />
+
+            <ImageButton
+                android:id="@+id/imageBtn_light"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_yj" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

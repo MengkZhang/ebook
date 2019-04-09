@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.deposit.UserDepositActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <com.tzpt.cloudlibrary.widget.recyclerview.EasyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_empty="@layout/common_empty_big_view"
+        app:layout_error="@layout/common_net_error_big_view"
+        app:layout_progress="@layout/common_progress_view"
+        app:scrollbarStyle="insideOverlay" />
+
+
+    <TextView
+        android:id="@+id/user_deposit_penalty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFCC3"
+        android:drawableEnd="@mipmap/ic_orange_arrow"
+        android:drawableRight="@mipmap/ic_orange_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:text="@string/overdue_fines"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/user_deposit_balance_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FEF2E4"
+        android:drawableEnd="@mipmap/ic_orange_arrow"
+        android:drawableRight="@mipmap/ic_orange_arrow"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/deposit_balance_occupy_deposit"
+        android:textColor="#FB7056"
+        android:textSize="16sp"
+        android:visibility="gone" />
+</LinearLayout>

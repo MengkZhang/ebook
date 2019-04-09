@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/icon_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ic_logo_name" />
+
+    <TextView
+        android:id="@+id/version_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_logo_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/divider_view_one"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/version_name_tv"
+        android:layout_marginTop="68dp"
+        android:background="@color/color_f4f4f4" />
+
+    <TextView
+        android:id="@+id/tel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/divider_view_one"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="客服热线: 400-101-5756"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/divider_view_two"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tel_tv"
+        android:background="@color/color_f4f4f4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="四川四原科技有限公司 版权所有"
+        android:textColor="@color/color_999999"
+        android:textSize="13sp" />
+</RelativeLayout>

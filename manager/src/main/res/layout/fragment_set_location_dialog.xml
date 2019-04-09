@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/permission_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="您还未开启定位！"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/permission_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/permission_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="开启定位，查找结果等准确！"
+        android:textColor="#444444"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/permission_content"
+        android:layout_marginTop="8dp"
+        android:background="#FFD8D8D8" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/not_set"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_dialog_btn_left"
+            android:gravity="center"
+            android:text="暂不"
+            android:textColor="#AA886C"
+            android:textSize="16sp" />
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#FFD8D8D8" />
+
+        <TextView
+            android:id="@+id/set_up"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_dialog_btn_right"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#AA886C"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

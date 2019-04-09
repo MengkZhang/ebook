@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bg_ffffff" />
+
+    <item
+        android:bottom="38dp"
+        android:left="38dp"
+        android:right="38dp"
+        android:top="38dp">
+        <bitmap
+            android:antialias="true"
+            android:dither="true"
+            android:filter="true"
+            android:gravity="bottom|center_horizontal"
+            android:scaleType="center"
+            android:src="@mipmap/bg_splash_logo"
+            android:tileMode="disabled" />
+    </item>
+</layer-list>

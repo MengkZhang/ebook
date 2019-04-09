@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/discuss_reader_head_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_head_mr" />
+
+    <LinearLayout
+        android:id="@+id/discuss_name_praise_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/discuss_reader_head_iv"
+        android:layout_toRightOf="@+id/discuss_reader_head_iv"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/discuss_reader_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"
+            tools:text="王女士" />
+
+        <TextView
+            android:id="@+id/discuss_praise_status_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_discuss_list_praise_done"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/ic_discuss_list_praise_done"
+            android:gravity="top"
+            android:paddingBottom="2dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:textSize="12sp"
+            tools:text="128" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/discuss_reader_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discuss_name_praise_ll"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/discuss_reader_head_iv"
+        android:layout_toRightOf="@+id/discuss_reader_head_iv"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        tools:text="全民阅读很不错，希望国民多多参与，提升素的坑的疯狂发方法发点击个地方。" />
+
+    <ImageView
+        android:id="@+id/discuss_img_iv"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_below="@+id/discuss_reader_content_tv"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/discuss_reader_head_iv"
+        android:layout_toRightOf="@+id/discuss_reader_head_iv"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/discuss_reader_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discuss_img_iv"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/discuss_reader_head_iv"
+        android:layout_toRightOf="@+id/discuss_reader_head_iv"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp"
+        tools:text="20170921  18:30:00" />
+
+    <TextView
+        android:id="@+id/discuss_own_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/discuss_reader_time_tv"
+        android:layout_toEndOf="@+id/discuss_reader_time_tv"
+        android:layout_toRightOf="@+id/discuss_reader_time_tv"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/color_3972be"
+        android:textSize="12sp"
+        tools:text="回复" />
+</RelativeLayout>

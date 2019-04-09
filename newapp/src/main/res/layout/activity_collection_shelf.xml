@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tzpt.cloudlibrary.ui.account.collection.CollectionShelfActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/collection_ebook_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_collection_ebook"
+            app:menu_name="电子书" />
+
+        <com.tzpt.cloudlibrary.widget.CustomUserGridMenu
+            android:id="@+id/collection_video_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            app:menu_icon="@mipmap/ic_collection_video"
+            app:menu_name="视频" />
+    </LinearLayout>
+
+
+</LinearLayout>

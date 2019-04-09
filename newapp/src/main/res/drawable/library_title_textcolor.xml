@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下时的背景图片 -->
+    <item android:color="#ffffff" android:state_enabled="false" android:state_pressed="true" />
+    <!-- 按下时的背景图片 -->
+    <item android:color="#ffffff" android:state_checked="true" android:state_enabled="true" />
+    <!-- 默认时的背景图片 -->
+    <item android:color="#4a3624" />
+
+</selector>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tzpt.cloudlibrary">
+    <!-- for Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+    <uses-permission android:name="com.bbk.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.bbk.launcher2.permission.WRITE_SETTINGS" /> <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" /> <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 唤醒 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 魅族toast所需权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 手机振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 写入设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> <!-- 摄像头 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" /> <!-- 摄像头自动对焦 -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".CloudLibraryApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash_Theme_Full">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GuideActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="ytsg" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.paperbook.BookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.library.LibraryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.ebook.EBookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.ranklist.RankListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.paperbook.BookDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.ebook.EBookDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.ebook.EBookReaderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Reader_NoActionBar_FullScreen" />
+        <activity
+            android:name=".ui.information.InformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.account.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.UserHeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.share.ShareAppActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.UserDepositActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.BillDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.DepositBalanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.DepositBalancePenaltyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.PenaltyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.UserLibraryDepositActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.setting.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.borrow.ReaderNotesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.borrow.BorrowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.setting.DownloadSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.setting.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.subscription.SubscriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.interaction.InteractionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.borrow.BorrowBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.borrow.BorrowBookDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.borrow.ReadingNoteEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.account.ChangePhoneNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.selfhelp.SelfHelpBorrowBooksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.interaction.RecommendNewBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ebook.EBookShelfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.interaction.RecommendNewBookScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.search.ScanningIsbnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.selfhelp.SelfHelpBorrowBooksScanningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.map.MapNavigationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.map.SwitchCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.information.InformationDetailDiscussActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_FullScreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".ui.information.InformationAdvancedSearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.common.AdvancedCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.common.AdvancedTwoLevelCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.readers.ActionDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.paperbook.BookListAdvancedSearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.library.LibraryListAdvancedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.account.card.UserIdentificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.borrow.UserReservationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.UserDepositModuleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.PayDepositActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.UserDepositAgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.selfhelp.SelfHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.RefundDepositActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.RefundDepositAuthenticationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.VisitorRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmptyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.share.ShareActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_Dialog_Theme" />
+        <activity
+            android:name=".ui.share.LandScapeShareActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Activity_Dialog_Theme" />
+        <activity
+            android:name=".ui.library.LibraryToLeaveMessageActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.common.GalleyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent" />
+        <activity
+            android:name=".ui.account.interaction.MyMessageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.information.InformationCommentDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.account.card.FaceRecognitionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.card.FaceCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.card.FacePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.readers.ActivityListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ebook.EBookTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.paperbook.BookTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.borrow.UserCompensateBookActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.video.VideoDetailActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_FullScreen" />
+        <activity
+            android:name=".ui.video.VideoPlayActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar_FullScreen" />
+        <activity
+            android:name=".ui.video.VideoTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.video.VideoShelfActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.video.VideoCacheListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.video.VideoDownloadChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ebook.EBookReadLimitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_Dialog_Theme" />
+        <activity
+            android:name=".ui.library.LibraryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.library.LibraryIntroduceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.library.LibraryMainBranchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.library.LibraryMessageBoardActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.account.selfhelp.SelfHelpBuyBookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.account.selfhelp.SelfHelpBuyBookScanningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.selfhelp.VerifyPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity_Dialog_Theme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysVisible" />
+        <activity
+            android:name=".ui.account.selfhelp.SelfBuyBookShelfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.selfhelp.SelfBuyBookShelfDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.library.BorrowingIntroduceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.deposit.PayPenaltyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.UserNickNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.collection.CollectionShelfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ebook.EBookCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.video.VideoCollectionListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bookstore.BookStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bookstore.BookStoreDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.bookstore.BookStoreIntroduceActivity"
+            android:screenOrientation="portrait" /> <!-- share for qq or Qzone -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105405811" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- share for weCart -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTranslucentTheme" />
+
+        <receiver
+            android:name=".ui.share.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.account.CropPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Reader_NoActionBar_FullScreen" />
+        <activity
+            android:name=".ui.account.GalleryActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="WEIBO_APPKEY"
+            android:value="73772033" />
+        <meta-data
+            android:name="WEIBO_CHANNEL"
+            android:value="weibo" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d4760ca640b73256945d099870554164" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58b4e5d81061d25240000fa4" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <receiver android:name=".ui.main.AppUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver> <!-- Android 7.0下载 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver
+            android:name=".ui.video.CLNetReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".modle.remote.newdownload.PDownloadProvider"
+            android:authorities="${applicationId}.com.tzpt.cloudlibrary"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reader_login_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <com.tzpt.cloundlibrary.manager.widget.camera.IDCardCameraPreview
+        android:id="@+id/reader_login_camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tzpt.cloundlibrary.manager.widget.TitleBarView
+        android:id="@+id/reader_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/reader_login_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/reader_login_title"
+        android:background="#694a2c"
+        android:checkedButton="@+id/textViewScanIdcard"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/reader_login_scan_idcard_rb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="扫描身份证"
+            android:textColor="@drawable/bg_txt_7effffff"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/reader_login_account_rb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:text="输入账号"
+            android:textColor="@drawable/bg_txt_7effffff"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/light_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:drawableTop="@mipmap/ic_light"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="手电筒"
+        android:textColor="#cccccc"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/reader_login_account_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/reader_login_rg"
+        android:background="#f4f4f4"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/reader_login_account_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_round_ffffff"
+            android:gravity="center_vertical"
+            android:hint="输入手机号/身份证号/借阅证号"
+            android:imeOptions="actionNext"
+            android:inputType="textUri|text|textCapCharacters"
+            android:maxLength="18"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textColorHint="#cccccc"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/reader_login_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_round_ffffff"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:imeOptions="actionGo"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textColorHint="#cccccc"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/reader_login_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_btn_round_8a633d"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

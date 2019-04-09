@@ -1,0 +1,1 @@
+make: `D:/android_work/work_space/ebookreader/build/intermediates/ndkBuild/debug/obj/local/x86/libLineBreak-v2.so' is up to date.

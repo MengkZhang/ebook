@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <com.tzpt.cloundlibrary.manager.widget.MultiStateLayout
+        android:id="@+id/multi_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clickable="true"
+        app:layout_empty_view="@layout/common_footer_empty_view"
+        app:layout_error_view="@layout/common_net_error_view"
+        app:layout_progress_view="@layout/common_progress_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:id="@+id/today_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:gravity="center"
+                android:text="今日"
+                android:textColor="@color/color_694a2c"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:id="@+id/today_am_ll"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_toEndOf="@+id/today_tv"
+                android:layout_toRightOf="@+id/today_tv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/today_am_start_tv"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/today_am_divider_tv"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/today_am_end_tv"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/today_pm_ll"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/today_am_ll"
+                android:layout_alignStart="@+id/today_am_ll"
+                android:layout_below="@+id/today_am_ll"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/today_pm_start_tv"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/today_pm_end_tv"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/item_line2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/today_pm_ll"
+                android:layout_marginTop="12dp"
+                android:background="#f4f4f4" />
+
+            <TextView
+                android:id="@+id/regular_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_line2"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="定期"
+                android:textColor="@color/color_694a2c"
+                android:textSize="18sp" />
+
+            <include
+                android:id="@+id/regular_week_ll"
+                layout="@layout/view_choose_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_line2"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/today_tv"
+                android:layout_toRightOf="@+id/today_tv"
+                android:gravity="center" />
+
+
+            <LinearLayout
+                android:id="@+id/regular_am_ll"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/today_am_ll"
+                android:layout_alignStart="@+id/today_am_ll"
+                android:layout_below="@+id/regular_week_ll"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/regular_am_start_tv"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/regular_am_end_tv"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/regular_pm_ll"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/today_am_ll"
+                android:layout_alignStart="@+id/today_am_ll"
+                android:layout_below="@+id/regular_am_ll"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/regular_pm_start_tv"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/regular_pm_end_tv"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/item_line3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/regular_pm_ll"
+                android:layout_marginTop="12dp"
+                android:background="#f4f4f4" />
+
+
+            <TextView
+                android:id="@+id/phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_line3"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="电话"
+                android:textColor="@color/color_694a2c"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_line3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/phone_tv"
+                android:layout_toRightOf="@+id/phone_tv"
+                android:background="@null"
+                android:digits="@string/englist_phone"
+                android:gravity="center_vertical"
+                android:hint="请输入联系电话"
+                android:imeOptions="actionGo"
+                android:inputType="phone"
+                android:maxLength="20"
+                android:textColor="#333333"
+                android:textColorHint="#ffD7D7D7"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_et"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="地址"
+                android:textColor="@color/color_694a2c"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/address_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_et"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/phone_tv"
+                android:layout_toRightOf="@+id/phone_tv"
+                android:background="@null"
+                android:gravity="top|center_vertical"
+                android:hint="请在所在馆或书屋处精准定位"
+                android:maxLength="100"
+                android:textColor="#333333"
+                android:textColorHint="#ffD7D7D7"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/house_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/address_tv"
+                android:layout_alignRight="@+id/address_tv"
+                android:layout_below="@+id/address_et"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="门牌号"
+                android:textColor="@color/color_694a2c"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/house_num_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/address_et"
+                android:layout_alignStart="@+id/address_et"
+                android:layout_below="@+id/address_et"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="例：20楼2001室"
+                android:inputType="text"
+                android:lineSpacingExtra="1.2dp"
+                android:maxLength="20"
+                android:textColor="#333333"
+                android:textColorHint="#ffD7D7D7"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/confirm_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/house_num_et"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/bg_btn_round_8a633d"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/confirm_btn" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

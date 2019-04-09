@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.library.LibraryIntroduceActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="店\u3000\u3000名："
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@+id/name_title"
+                android:layout_toRightOf="@+id/name_title"
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/hall_code_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginTop="12dp"
+                android:text="店\u3000\u3000号："
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hall_code_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/hall_code_title"
+                android:layout_toRightOf="@+id/hall_code_title"
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tel_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hall_code_tv"
+                android:layout_marginTop="12dp"
+                android:text="电\u3000\u3000话："
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tel_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hall_code_tv"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/tel_title"
+                android:layout_toRightOf="@+id/tel_title"
+                android:textColor="@color/color_306cbb"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tel_tv"
+                android:layout_marginTop="12dp"
+                android:text="邮\u3000\u3000箱："
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mail_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tel_tv"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/mail_title"
+                android:layout_toRightOf="@+id/mail_title"
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/net_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mail_tv"
+                android:layout_marginTop="12dp"
+                android:text="网\u3000\u3000站："
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/net_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mail_tv"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/net_title"
+                android:layout_toRightOf="@+id/net_title"
+                android:textColor="@color/color_3996cf"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_tv"
+                android:layout_marginTop="12dp"
+                android:text="地\u3000\u3000址："
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_tv"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/address_title"
+                android:layout_toRightOf="@+id/address_title"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/business_hours_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_tv"
+                android:layout_marginTop="12dp"
+                android:text="营业时间："
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/business_hours_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_tv"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/business_hours_title"
+                android:layout_toRightOf="@+id/business_hours_title"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+
+            <com.tzpt.cloudlibrary.widget.CustomWebView
+                android:id="@+id/custom_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/business_hours_tv"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="25dp" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

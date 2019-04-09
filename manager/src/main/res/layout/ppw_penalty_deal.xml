@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/shadow_layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="#55000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/operator_panel_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:text="收罚金"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/penalty_money_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_round_stroke_f4f4f4"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:text="20.06"
+            android:textColor="@color/color_999999"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/apply_free_charge_reason_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_round_stroke_ffffff_cbcbcb"
+            android:hint="请输入免单理由"
+            android:maxLength="20"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColorHint="#cccccc"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/pay_cost_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_round_stroke_ffffff_cbcbcb"
+            android:hint="操作员密码"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColorHint="#cccccc"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/pay_cost_confirm_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_round_f4f4f4_eae8e8"
+            android:gravity="center"
+            android:text="确认收现金"
+            android:textColor="#9e724d"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>

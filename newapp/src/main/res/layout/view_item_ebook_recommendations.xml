@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_ffffff_item">
+
+
+    <RelativeLayout
+        android:id="@+id/ebook_item_img_cv"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="5.5dp"
+        android:layout_marginEnd="12.5dp"
+        android:layout_marginLeft="13.5dp"
+        android:layout_marginRight="12.5dp"
+        android:layout_marginStart="13.5dp"
+        android:layout_marginTop="5.5dp"
+        android:background="@mipmap/bg_book_shadow">
+
+        <ImageView
+            android:id="@+id/ebook_item_img"
+            android:layout_width="68dp"
+            android:layout_height="93dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ebook_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ebook_item_img_cv"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/ebook_item_img_cv"
+        android:layout_toRightOf="@+id/ebook_item_img_cv"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp"
+        tools:text="书名" />
+
+    <TextView
+        android:id="@+id/ebook_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ebook_item_title"
+        android:layout_alignLeft="@+id/ebook_item_title"
+        android:layout_alignRight="@+id/ebook_item_title"
+        android:layout_alignStart="@+id/ebook_item_title"
+        android:layout_below="@+id/ebook_item_title"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="5dp"
+        android:minLines="3"
+        android:padding="0dp"
+        android:textColor="@color/color_666666"
+        android:textSize="13sp"
+        tools:text="     本书是欧洲第一理财教练、《小狗钱钱》作者博多·舍费尔的经典之作，创造110周雄居德国图书畅销榜榜首的奇迹。" />
+
+
+    <TextView
+        android:id="@+id/ebook_item_anthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ebook_item_title"
+        android:layout_alignStart="@id/ebook_item_title"
+        android:layout_below="@+id/ebook_item_content"
+        android:layout_marginBottom="5.5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/ebook_item_preview_count_tv"
+        android:layout_toStartOf="@+id/ebook_item_preview_count_tv"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp"
+        tools:text="作者" />
+
+    <TextView
+        android:id="@+id/ebook_item_preview_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ebook_item_title"
+        android:layout_alignRight="@+id/ebook_item_title"
+        android:layout_below="@+id/ebook_item_content"
+        android:layout_marginBottom="5.5dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@mipmap/ic_ebook_preview_count"
+        android:drawablePadding="5dp"
+        android:drawableStart="@mipmap/ic_ebook_preview_count"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        tools:text="11.5万" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下时的背景图片 -->
+    <item android:drawable="@mipmap/ic_free_charge_checked" android:state_checked="true" />
+    <!-- 默认时的背景图片 -->
+    <item android:drawable="@mipmap/ic_free_charge_uncheck" android:state_checked="false" />
+</selector>

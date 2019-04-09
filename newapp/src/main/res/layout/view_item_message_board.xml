@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_board_msg_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_board_msg_head_img_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_head_miss" />
+
+    <LinearLayout
+        android:id="@+id/item_board_msg_name_praise_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/item_board_msg_head_img_iv"
+        android:layout_toRightOf="@+id/item_board_msg_head_img_iv"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_board_msg_reader_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#3972be"
+            android:textSize="15sp"
+            tools:text="JIN" />
+
+        <TextView
+            android:id="@+id/item_board_msg_praise_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_discuss_list_praise_done"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/ic_discuss_list_praise_done"
+            android:paddingBottom="2dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:textSize="12sp"
+            tools:text="128" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_board_msg_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_board_msg_name_praise_rl"
+        android:layout_alignStart="@+id/item_board_msg_name_praise_rl"
+        android:layout_below="@+id/item_board_msg_name_praise_rl"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="13dp"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="#464646"
+        android:textSize="15sp"
+        tools:text="说得很有道理，全民阅读的确是值得广大国民 大力提倡的事。" />
+
+    <FrameLayout
+        android:id="@+id/item_board_msg_img_fl"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_alignLeft="@+id/item_board_msg_name_praise_rl"
+        android:layout_alignStart="@+id/item_board_msg_name_praise_rl"
+        android:layout_below="@+id/item_board_msg_content_tv"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/item_board_msg_img_iv"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_board_msg_reply_list_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_board_msg_name_praise_rl"
+        android:layout_alignStart="@+id/item_board_msg_name_praise_rl"
+        android:layout_below="@+id/item_board_msg_img_fl"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/color_f4f4f4"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <com.tzpt.cloudlibrary.widget.LinearLayoutForListView
+            android:id="@+id/item_board_msg_reply_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <com.tzpt.cloudlibrary.widget.CustomTextViewDrawableRight
+            android:id="@+id/item_board_msg_reply_more_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_translate_common"
+            android:drawableEnd="@mipmap/ic_discuss_list_reply_more"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_discuss_list_reply_more"
+            android:gravity="start"
+            android:textColor="@color/color_3972be"
+            android:textSize="15sp"
+            tools:text="查看全部50条回复" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_board_msg_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_board_msg_name_praise_rl"
+        android:layout_alignStart="@+id/item_board_msg_name_praise_rl"
+        android:layout_below="@+id/item_board_msg_reply_list_ll"
+        android:layout_marginTop="12dp"
+        android:textColor="#999999"
+        android:textSize="13sp"
+        tools:text="12-21  21:02:00" />
+
+    <TextView
+        android:id="@+id/item_board_msg_del_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_board_msg_reply_list_ll"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/item_board_msg_time_tv"
+        android:layout_toRightOf="@+id/item_board_msg_time_tv"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/delete"
+        android:textColor="#3972be"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignLeft="@+id/item_board_msg_name_praise_rl"
+        android:layout_alignStart="@+id/item_board_msg_name_praise_rl"
+        android:layout_below="@+id/item_board_msg_time_tv"
+        android:layout_marginTop="9dp"
+        android:background="#e5e5e5" />
+</RelativeLayout>

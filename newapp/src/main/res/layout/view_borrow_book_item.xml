@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_account_user_book_head_item" />
+
+    <RelativeLayout
+        android:id="@+id/one_key_to_re_new"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_blue_shape"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键续借"
+            android:drawablePadding="8dp"
+            android:layout_marginLeft="8.5dp"
+            android:layout_marginRight="8.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@mipmap/invalid_name"
+            android:textColor="@color/color_ffffff"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e2e2e2"
+        android:layout_marginTop="17dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:baselineAligned="false"
+        android:divider="@drawable/divider_e2e2e2_vertical"
+        android:dividerPadding="@dimen/margin_12dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <com.tzpt.cloudlibrary.widget.DrawableCenterTextView
+            android:id="@+id/item_book_lost_tv"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_ffffff"
+            android:drawableLeft="@mipmap/ic_re_buy_book"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/ic_re_buy_book"
+            android:gravity="center_vertical"
+            android:text="赔书"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <com.tzpt.cloudlibrary.widget.DrawableCenterTextView
+            android:id="@+id/item_book_write_note_tv"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_ffffff"
+            android:drawableLeft="@mipmap/ic_write_comment"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/ic_write_comment"
+            android:gravity="center_vertical"
+            android:text="笔记"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <com.tzpt.cloudlibrary.widget.DrawableCenterTextView
+            android:id="@+id/item_book_thumbs_up"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_ffffff"
+            android:drawableLeft="@mipmap/ic_click_have_praise"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/ic_click_have_praise"
+            android:gravity="center_vertical"
+            android:text="点赞"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

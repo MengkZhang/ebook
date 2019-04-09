@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/operator_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_round_stroke_f4f4f4"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/old_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_round_stroke_ffffff_cbcbcb"
+                android:digits="@string/englist_scanner_input_numbers"
+                android:gravity="center"
+                android:hint="旧密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/new_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_round_stroke_ffffff_cbcbcb"
+                android:digits="@string/englist_scanner_input_numbers"
+                android:gravity="center"
+                android:hint="新密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/sure_new_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_round_stroke_ffffff_cbcbcb"
+                android:digits="@string/englist_scanner_input_numbers"
+                android:gravity="center"
+                android:hint="新密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/confirm_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_btn_round_8a633d"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

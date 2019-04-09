@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_code_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <EditText
+        android:id="@+id/edit_code_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_round_d3cfc9"
+        android:gravity="center"
+        android:hint="输入条码号"
+        android:imeOptions="actionDone"
+        android:inputType="textUri|text"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColorHint="#888888"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/scan_code_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_scaner" />
+
+</RelativeLayout>

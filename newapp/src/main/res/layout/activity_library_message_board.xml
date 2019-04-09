@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tzpt.cloudlibrary.ui.library.LibraryMessageBoardActivity">
+
+    <com.tzpt.cloudlibrary.widget.titlebar.TitleBarView
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.tzpt.cloudlibrary.widget.recyclerview.EasyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/message_board_my_msg_tv"
+        android:layout_below="@+id/common_toolbar"
+        app:layout_empty="@layout/common_empty_big_view"
+        app:layout_error="@layout/common_net_error_big_view"
+        app:layout_progress="@layout/common_progress_view"
+        app:scrollbarStyle="insideOverlay" />
+
+    <ImageView
+        android:id="@+id/message_board_shadow_iv"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@+id/message_board_my_msg_tv"
+        android:background="@drawable/bg_gradient_0f"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/message_board_my_msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="我要留言"
+        android:textColor="#945f30"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/comment_publish_ll"
+        layout="@layout/view_comment_publish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/common_toolbar" />
+
+
+    <com.tzpt.cloudlibrary.widget.LoadingProgressView
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+{
+  "buildFiles": [
+    "C:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Android.mk",
+    "C:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/Administrator/AndroidStudioProjects/CloudLibrary/ebookreader/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\build\\intermediates\\ndkBuild\\debug\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk clean"
+  ],
+  "libraries": {
+    "NativeFormats-v4-debug-x86_64": {
+      "artifactName": "NativeFormats-v4",
+      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/Administrator/AndroidStudioProjects/CloudLibrary/ebookreader/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\build\\intermediates\\ndkBuild\\debug\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk C:/Users/Administrator/AndroidStudioProjects/CloudLibrary/ebookreader/build/intermediates/ndkBuild/debug/obj/local/x86_64/libNativeFormats-v4.so",
+      "abi": "x86_64",
+      "output": "C:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64\\libNativeFormats-v4.so"
+    },
+    "DeflatingDecompressor-v3-debug-x86_64": {
+      "artifactName": "DeflatingDecompressor-v3",
+      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/Administrator/AndroidStudioProjects/CloudLibrary/ebookreader/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\build\\intermediates\\ndkBuild\\debug\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk C:/Users/Administrator/AndroidStudioProjects/CloudLibrary/ebookreader/build/intermediates/ndkBuild/debug/obj/local/x86_64/libDeflatingDecompressor-v3.so",
+      "abi": "x86_64",
+      "output": "C:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64\\libDeflatingDecompressor-v3.so"
+    },
+    "LineBreak-v2-debug-x86_64": {
+      "artifactName": "LineBreak-v2",
+      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/Administrator/AndroidStudioProjects/CloudLibrary/ebookreader/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\build\\intermediates\\ndkBuild\\debug\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk C:/Users/Administrator/AndroidStudioProjects/CloudLibrary/ebookreader/build/intermediates/ndkBuild/debug/obj/local/x86_64/libLineBreak-v2.so",
+      "abi": "x86_64",
+      "output": "C:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64\\libLineBreak-v2.so"
+    },
+    "expat-debug-x86_64": {
+      "artifactName": "expat",
+      "buildCommand": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/Administrator/AndroidStudioProjects/CloudLibrary/ebookreader/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\build\\intermediates\\ndkBuild\\debug\\lib NDK_APPLICATION_MK:\u003dsrc/main/jni/Application.mk C:/Users/Administrator/AndroidStudioProjects/CloudLibrary/ebookreader/build/intermediates/ndkBuild/debug/obj/local/x86_64/libexpat.a",
+      "abi": "x86_64",
+      "output": "C:\\Users\\Administrator\\AndroidStudioProjects\\CloudLibrary\\ebookreader\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64\\libexpat.a"
+    }
+  }
+}

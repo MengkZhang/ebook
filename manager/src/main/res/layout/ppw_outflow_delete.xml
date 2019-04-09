@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/flow_delete_out_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="#55000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="(删除后，本单图书可外借，请及时上架！)"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:singleLine="true"
+            android:text="确定删除本单？"
+            android:textColor="#f00"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/flow_single_delete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_submit"
+            android:gravity="center"
+            android:text="清点删单"
+            android:textColor="@color/color_694a2c"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/flow_direct_delete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_submit"
+            android:gravity="center"
+            android:text="直接删单"
+            android:textColor="@color/color_694a2c"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

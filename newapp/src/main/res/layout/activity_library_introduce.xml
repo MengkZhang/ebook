@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.library.LibraryIntroduceActivity">
+
+    <include layout="@layout/view_common_title_bar" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.5dp"
+                android:layout_marginTop="18.5dp"
+                android:text="馆名"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="18.5dp"
+                android:layout_marginRight="19.5dp"
+                android:layout_toEndOf="@+id/name_title"
+                android:layout_toRightOf="@+id/name_title"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hall_code_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginLeft="16.5dp"
+                android:layout_marginTop="18dp"
+                android:text="馆号"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/hall_code_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="19.5dp"
+                android:layout_toEndOf="@+id/hall_code_title"
+                android:layout_toRightOf="@+id/hall_code_title"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tel_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hall_code_tv"
+                android:layout_marginLeft="16.5dp"
+                android:layout_marginTop="18dp"
+                android:text="电话"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tel_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hall_code_tv"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="19.5dp"
+                android:layout_toEndOf="@+id/tel_title"
+                android:layout_toRightOf="@+id/tel_title"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tel_tv"
+                android:layout_marginLeft="16.5dp"
+                android:layout_marginTop="18dp"
+                android:text="邮箱"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mail_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tel_tv"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="19.5dp"
+                android:layout_toEndOf="@+id/mail_title"
+                android:layout_toRightOf="@+id/mail_title"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/net_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mail_tv"
+                android:layout_marginLeft="16.5dp"
+                android:layout_marginTop="18dp"
+                android:text="网站"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/net_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mail_tv"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="19.5dp"
+                android:layout_toEndOf="@+id/net_title"
+                android:layout_toRightOf="@+id/net_title"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_tv"
+                android:layout_marginLeft="16.5dp"
+                android:layout_marginTop="18dp"
+                android:text="地址"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_tv"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="19.5dp"
+                android:layout_toEndOf="@+id/address_title"
+                android:layout_toRightOf="@+id/address_title"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/line_one_view"
+                android:layout_width="match_parent"
+                android:layout_height="9.5dp"
+                android:layout_below="@id/address_tv"
+                android:layout_marginTop="16.5dp"
+                android:background="#ebebeb" />
+
+            <RelativeLayout
+                android:id="@+id/open_time_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_one_view">
+
+                <TextView
+                    android:id="@+id/open_mode_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.5dp"
+                    android:layout_marginTop="19dp"
+                    android:gravity="center_horizontal"
+                    android:text="开放模式"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/open_mode_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginRight="19.5dp"
+                    android:layout_toRightOf="@id/open_mode_title"
+                    android:textColor="#999999"
+                    android:textSize="15sp"
+                    tools:text="" />
+
+                <TextView
+                    android:id="@+id/library_today_open_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/open_mode_title"
+                    android:layout_marginLeft="16.5dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/today_open_time"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/library_today_start_open_time_tv"
+                        android:layout_toRightOf="@id/library_today_open_time_tv"
+                        android:layout_toEndOf="@id/library_today_open_time_tv"
+                        android:layout_below="@+id/open_mode_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:text=""
+                        android:textColor="#999999"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/library_today_end_open_time_tv"
+                        android:layout_toRightOf="@id/library_today_start_open_time_tv"
+                        android:layout_toEndOf="@id/library_today_start_open_time_tv"
+                        android:layout_below="@+id/open_mode_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:text=""
+                        android:textColor="#999999"
+                        android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/library_long_open_time_week_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/library_today_open_time_tv"
+                    android:layout_marginLeft="16.5dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/long_to_open"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/library_long_open_time_week_tv"
+                        android:layout_below="@id/library_today_open_time_tv"
+                        android:layout_toRightOf="@id/library_long_open_time_week_title_tv"
+                        android:layout_toEndOf="@id/library_long_open_time_week_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:text=""
+                        android:textColor="#999999"
+                        android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/library_long_open_time_start_time_tv"
+                            android:layout_below="@id/library_long_open_time_week_tv"
+                            android:layout_toRightOf="@id/library_long_open_time_week_title_tv"
+                            android:layout_toEndOf="@id/library_long_open_time_week_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="7dp"
+                            android:text=""
+                            android:textColor="#999999"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/library_long_open_time_end_time_tv"
+                            android:layout_below="@id/library_long_open_time_week_tv"
+                            android:layout_toRightOf="@id/library_long_open_time_start_time_tv"
+                            android:layout_toEndOf="@id/library_long_open_time_start_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            android:text=""
+                            android:textColor="#999999"
+                            android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/line_two_view"
+                android:layout_width="match_parent"
+                android:layout_height="9.5dp"
+                android:layout_below="@id/open_time_rl"
+                android:layout_marginTop="16.5dp"
+                android:background="#ebebeb" />
+
+            <!--本馆资源-->
+            <RelativeLayout
+                android:id="@+id/lib_source_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_two_view"
+                android:layout_marginLeft="16.5dp"
+                android:layout_marginRight="19.5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/book_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:text="纸质藏书"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/book_num_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13.5dp"
+                    android:layout_marginTop="16.5dp"
+                    android:layout_toRightOf="@+id/book_tv"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ebook_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/book_tv"
+                    android:layout_marginTop="18dp"
+                    android:text="电子藏书"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ebook_num_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/book_tv"
+                    android:layout_marginLeft="13.5dp"
+                    android:layout_marginTop="16.5dp"
+                    android:layout_toRightOf="@+id/ebook_tv"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/av_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ebook_tv"
+                    android:layout_marginTop="18dp"
+                    android:text="视频资源"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/av_num_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ebook_tv"
+                    android:layout_marginLeft="13.5dp"
+                    android:layout_marginTop="16.5dp"
+                    android:layout_toRightOf="@+id/ebook_tv"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line_three_view"
+                android:layout_width="match_parent"
+                android:layout_height="9.5dp"
+                android:layout_below="@id/lib_source_rl"
+                android:layout_marginTop="16.5dp"
+                android:background="#ebebeb" />
+
+            <!--本馆读者-->
+            <RelativeLayout
+                android:id="@+id/lib_reader_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_three_view"
+                android:layout_marginLeft="16.5dp"
+                android:layout_marginRight="19.5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/reg_reader_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:textColor="#999999"
+                    android:textSize="15sp"
+                    android:text="注册读者" />
+
+                <TextView
+                    android:id="@+id/reg_reader_num_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toRightOf="@+id/reg_reader_tv"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/visit_reader_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reg_reader_tv"
+                    android:layout_marginTop="17dp"
+                    android:text="服务读者"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/visit_reader_num_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reg_reader_tv"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toRightOf="@+id/visit_reader_tv"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/server_reader_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/visit_reader_tv"
+                    android:layout_marginTop="17dp"
+                    android:text="访问读者"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/server_reader_num_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/visit_reader_tv"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toRightOf="@id/server_reader_tv"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line_four_view"
+                android:layout_width="match_parent"
+                android:layout_height="9.5dp"
+                android:layout_below="@id/lib_reader_rl"
+                android:layout_marginTop="16.5dp"
+                android:background="#ebebeb" />
+
+            <com.tzpt.cloudlibrary.widget.CustomWebView
+                android:id="@+id/custom_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/line_four_view"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginBottom="14.5dp" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
